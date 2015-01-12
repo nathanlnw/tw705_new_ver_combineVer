@@ -1,0 +1,12 @@
+---- usb_export_status Matches (11 in 3 files) ----
+jt808_GB19056.c (bsp\stm32f20x_car\applications\gb19056):        usb_export_status = 66;		///0,表示没有检测到U盘，无法导出；1表示正常导出数据，66表示导出成功
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):uint8_t usb_export_status = 0;		///0,表示没有检测到U盘，无法导出；1表示正常导出数据，66表示导出成功
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):    if(usb_export_status == 66)
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):            if(usb_export_status)
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):    //usb_export_status 	= 0;
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):        usb_export_status = 0;
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):                usb_export_status = 1;
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):                usb_export_status = 0;
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):    if(last_status != usb_export_status)
+Menu_4_4_ExportData.c (bsp\stm32f20x_car\applications\lcd):        usb_export_status = 0;
+Menu_Include.h (bsp\stm32f20x_car\applications\lcd):extern uint8_t usb_export_status;		///0,表示没有检测到U盘，无法导出；1表示正常导出数据，66表示导出成功
