@@ -14,7 +14,7 @@
 #include "Menu_Include.h"
 #include <string.h>
 #include <stdlib.h>
-#include "sed1520.h"
+#include "LCD_Driver.h"
 #include "jt808.h"
 #include "jt808_gps.h"
 

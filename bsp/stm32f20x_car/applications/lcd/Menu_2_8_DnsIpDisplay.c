@@ -14,7 +14,7 @@
 #include "Menu_Include.h"
 #include  <string.h>
 
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 static uint8_t pos;
 

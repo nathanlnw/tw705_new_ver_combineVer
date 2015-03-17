@@ -13,7 +13,7 @@
  ***********************************************************/
 #include "Menu_Include.h"
 #include <string.h>
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 #define  DIS_Dur_width_inter 11
 

@@ -834,8 +834,12 @@ void CheckICCard( void )
                     ic_card_para.IC_Card_Checked = 1;
                     beep(2, 2, 3);
                 }
-                pMenuItem = &Menu_5_9_debug;
-                pMenuItem->show( );
+                if( device_unlock )
+                {
+                    IC_card_showinfo = 1;
+                    pMenuItem = &Menu_2_5_DriverInfor;
+                    pMenuItem->show( );
+                }
                 _CardSetRST_HIGH;
                 _CardSetPower_LOW;
                 _CardCMDVCC_HIGH;

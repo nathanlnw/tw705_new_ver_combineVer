@@ -1,5 +1,5 @@
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 unsigned char CarMulTrans_screen = 0;
 

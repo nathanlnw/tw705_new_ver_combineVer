@@ -1,6 +1,6 @@
 
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 
 u8 Dis_screen_6_flag = 0;

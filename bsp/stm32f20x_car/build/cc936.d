@@ -1,0 +1,16 @@
+.\build\cc936.o: ..\..\components\dfs\filesystems\elmfat\option\cc936.c
+.\build\cc936.o: ..\..\components\dfs\filesystems\elmfat\option\../ff.h
+.\build\cc936.o: ..\..\include\rtthread.h
+.\build\cc936.o: ..\..\include\rtdef.h
+.\build\cc936.o: .\rtconfig.h
+.\build\cc936.o: E:\KEIL_v5.13\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\cc936.o: ..\..\include\rtdebug.h
+.\build\cc936.o: ..\..\include\rtservice.h
+.\build\cc936.o: ..\..\include\rtm.h
+.\build\cc936.o: ..\..\include\rtthread.h
+.\build\cc936.o: ..\..\components\dfs\filesystems\elmfat\option\../integer.h
+.\build\cc936.o: ..\..\components\dfs\filesystems\elmfat\option\../ffconf.h
+.\build\cc936.o: ..\..\components\finsh\finsh.h
+.\build\cc936.o: E:\KEIL_v5.13\ARM\ARMCC\Bin\..\include\ctype.h
+.\build\cc936.o: E:\KEIL_v5.13\ARM\ARMCC\Bin\..\include\stdlib.h
+.\build\cc936.o: E:\KEIL_v5.13\ARM\ARMCC\Bin\..\include\string.h

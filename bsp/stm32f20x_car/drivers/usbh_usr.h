@@ -37,6 +37,7 @@
 #include <stdio.h>
 #include "usbh_msc_core.h"
 
+
 /** @addtogroup USBH_USER
   * @{
   */

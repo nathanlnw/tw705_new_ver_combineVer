@@ -1,6 +1,6 @@
 #include "Menu_Include.h"
 //#include "App_moduleConfig.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 #define  MainDns_width1  6
 

@@ -16,7 +16,7 @@
 #include  <string.h>
 
 #include "menu_include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 #include "printer.h"
 #include "jt808_util.h"
 

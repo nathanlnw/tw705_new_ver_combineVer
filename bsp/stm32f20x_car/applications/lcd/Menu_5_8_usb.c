@@ -17,7 +17,7 @@
 #include <rtthread.h>
 #include <rtdevice.h>
 #include <dfs_posix.h>
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 #if 0
 unsigned char		DataOutInFlag	= 0;    //  1:导入导出界面  2:导出子菜单

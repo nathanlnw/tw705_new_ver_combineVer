@@ -14,7 +14,7 @@
 #include "Menu_Include.h"
 #include <stdio.h>
 #include <string.h>
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 
 unsigned char	Menu_Logout			= 0;    //  1:准备注册再按确认键=2   =2:发送注册

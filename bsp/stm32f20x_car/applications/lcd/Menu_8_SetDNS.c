@@ -1,6 +1,6 @@
 #include "Menu_Include.h"
 //#include "App_moduleConfig.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 u8 Dis_screen_8_flag = 0;
 
 static const uint8_t	menu_num = 7;

@@ -12,7 +12,7 @@
  *     David    96/10/12     1.0     build this moudle
  ***********************************************************/
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 u8	can_screen		= 0;
 u8	can_counter		= 1;
 u8	can_ID_counter	= 0;

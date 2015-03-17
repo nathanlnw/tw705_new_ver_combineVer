@@ -1,5 +1,5 @@
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 static const uint8_t	menu_num = 6;
 #define  DIS_Dur_width_inter 11

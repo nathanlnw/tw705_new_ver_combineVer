@@ -20,7 +20,7 @@
 #include "printer.h"
 #include <finsh.h>
 
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 /*打印头相关*/
 

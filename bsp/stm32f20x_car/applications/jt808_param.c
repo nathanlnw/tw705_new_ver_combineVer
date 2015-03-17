@@ -34,7 +34,7 @@
 #define BKSRAM_FORMAT				0x57584448
 
 
-uint8_t		HardWareVerion = 0;				///读取到的PCB板的版本号，对应的口为PA14,PA13,PB3
+uint8_t		HardWareVerion =0;				///读取到的PCB板的版本号，对应的口为PA14,PA13,PB3
 uint16_t 	current_speed = 0;				///单位为km/h,当前速度，可能为GPS速度，也可能为脉冲速度，取决于参数id_0xF043，
 uint16_t 	current_speed_10x = 0;			///单位为0.1km/h,当前速度，可能为GPS速度，也可能为脉冲速度，取决于参数id_0xF043，
 uint8_t		param_set_speed_state = 0;		///该值为非零时才有效，1表示速度为0时立刻上报一包数据，2表示速度超过为10km/h时上报一包数据

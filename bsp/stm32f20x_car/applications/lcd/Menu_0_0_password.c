@@ -1,6 +1,6 @@
 #include  <string.h>
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 #define  pass_width1  6
 #define  ENTER_CODE  "001100"      // NX  √‹¬Î

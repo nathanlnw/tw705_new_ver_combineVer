@@ -12,7 +12,7 @@
  *     David    96/10/12     1.0     build this moudle
  ***********************************************************/
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 #define  DIS_Dur_width_check 11
 
 static const uint8_t 	menu_num = 5;

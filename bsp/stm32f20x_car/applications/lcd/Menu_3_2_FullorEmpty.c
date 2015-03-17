@@ -12,7 +12,7 @@
  *     David    96/10/12     1.0     build this moudle
  ***********************************************************/
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 unsigned char	*car_status_str[4] = { "¿Õ³µ", "°ëÔØ", "Ô¤Áô", "ÂúÔØ" };
 
 static uint8_t	pos			= 0;

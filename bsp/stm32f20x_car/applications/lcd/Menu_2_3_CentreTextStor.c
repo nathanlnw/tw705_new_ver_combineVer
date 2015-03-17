@@ -13,7 +13,7 @@
  ***********************************************************/
 #include "Menu_Include.h"
 #include <string.h>
-#include "sed1520.h"
+#include "LCD_Driver.h"
 #include "menu_include.h"
 
 static TEXTMSG	textmsg;                /*传递进来的信息，包含TEXTMSG_HEAD*/

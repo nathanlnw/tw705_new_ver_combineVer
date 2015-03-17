@@ -1,5 +1,5 @@
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 
 unsigned char Record_screen = 0; //进入录音界面=1,准备发送开始/结束时为2   开始/结束已发送为3    到下一界面恢复初试值

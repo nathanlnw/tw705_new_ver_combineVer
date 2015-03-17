@@ -1094,11 +1094,6 @@
               <FilePath>..\..\components\dfs\src\dfs_file.c</FilePath>
             </File>
             <File>
-              <FileName>dfs_posix.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\components\dfs\src\dfs_posix.c</FilePath>
-            </File>
-            <File>
               <FileName>ff.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\components\dfs\filesystems\elmfat\ff.c</FilePath>
@@ -1349,11 +1344,6 @@
               <FilePath>.\applications\lcd\Menu_Include.c</FilePath>
             </File>
             <File>
-              <FileName>SED1520.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\lcd\SED1520.c</FilePath>
-            </File>
-            <File>
               <FileName>menu_popup.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\menu_popup.c</FilePath>
@@ -1497,6 +1487,11 @@
               <FileName>Menu_8_4_AuxIpPort.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\Menu_8_4_AuxIpPort.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\lcd\LCD_Driver.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2617,11 +2612,6 @@
               <FilePath>..\..\components\dfs\src\dfs_file.c</FilePath>
             </File>
             <File>
-              <FileName>dfs_posix.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\components\dfs\src\dfs_posix.c</FilePath>
-            </File>
-            <File>
               <FileName>ff.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\components\dfs\filesystems\elmfat\ff.c</FilePath>
@@ -2872,11 +2862,6 @@
               <FilePath>.\applications\lcd\Menu_Include.c</FilePath>
             </File>
             <File>
-              <FileName>SED1520.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\lcd\SED1520.c</FilePath>
-            </File>
-            <File>
               <FileName>menu_popup.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\menu_popup.c</FilePath>
@@ -3063,6 +3048,11 @@
               <FileName>Menu_8_4_AuxIpPort.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\Menu_8_4_AuxIpPort.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\lcd\LCD_Driver.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -4183,11 +4173,6 @@
               <FilePath>..\..\components\dfs\src\dfs_file.c</FilePath>
             </File>
             <File>
-              <FileName>dfs_posix.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\components\dfs\src\dfs_posix.c</FilePath>
-            </File>
-            <File>
               <FileName>ff.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\components\dfs\filesystems\elmfat\ff.c</FilePath>
@@ -4438,11 +4423,6 @@
               <FilePath>.\applications\lcd\Menu_Include.c</FilePath>
             </File>
             <File>
-              <FileName>SED1520.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\lcd\SED1520.c</FilePath>
-            </File>
-            <File>
               <FileName>menu_popup.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\menu_popup.c</FilePath>
@@ -4586,6 +4566,11 @@
               <FileName>Menu_8_4_AuxIpPort.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\Menu_8_4_AuxIpPort.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\lcd\LCD_Driver.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -5749,11 +5734,6 @@
               <FilePath>..\..\components\dfs\src\dfs_file.c</FilePath>
             </File>
             <File>
-              <FileName>dfs_posix.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\components\dfs\src\dfs_posix.c</FilePath>
-            </File>
-            <File>
               <FileName>ff.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\components\dfs\filesystems\elmfat\ff.c</FilePath>
@@ -6004,11 +5984,6 @@
               <FilePath>.\applications\lcd\Menu_Include.c</FilePath>
             </File>
             <File>
-              <FileName>SED1520.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\applications\lcd\SED1520.c</FilePath>
-            </File>
-            <File>
               <FileName>menu_popup.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\menu_popup.c</FilePath>
@@ -6152,6 +6127,11 @@
               <FileName>Menu_8_4_AuxIpPort.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\applications\lcd\Menu_8_4_AuxIpPort.c</FilePath>
+            </File>
+            <File>
+              <FileName>LCD_Driver.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\applications\lcd\LCD_Driver.c</FilePath>
             </File>
           </Files>
         </Group>

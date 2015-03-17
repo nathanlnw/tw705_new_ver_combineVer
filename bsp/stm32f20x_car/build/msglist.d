@@ -1,0 +1,11 @@
+.\build\msglist.o: applications\msglist.c
+.\build\msglist.o: E:\KEIL_v5.13\ARM\ARMCC\Bin\..\include\stdlib.h
+.\build\msglist.o: ..\..\include\rtthread.h
+.\build\msglist.o: ..\..\include\rtdef.h
+.\build\msglist.o: .\rtconfig.h
+.\build\msglist.o: E:\KEIL_v5.13\ARM\ARMCC\Bin\..\include\stdarg.h
+.\build\msglist.o: ..\..\include\rtdebug.h
+.\build\msglist.o: ..\..\include\rtservice.h
+.\build\msglist.o: ..\..\include\rtm.h
+.\build\msglist.o: ..\..\include\rtthread.h
+.\build\msglist.o: applications\msglist.h

@@ -36,7 +36,7 @@
 #include "SPI_SD_driver.h"
 #include <finsh.h>
 #include "diskio.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 
 extern void mma8451_process(void);

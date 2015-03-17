@@ -1,7 +1,7 @@
 #include "Menu_Include.h"
 #include <stdio.h>
 #include <string.h>
-#include "sed1520.h"
+#include "LCD_Driver.h"
 #include "usbh_usr.h"
 #include "jt808_GB19056.h"
 
@@ -27,11 +27,10 @@ static void dis_pro(void)
         }
         else if(1 == menu)
         {
-            if(usb_export_status==1)
+            if(usb_export_status == 1)
                 lcd_text12(12, 10, "USB数据导出中...", 16, LCD_MODE_SET);
-			else
-			if(usb_export_status!=66)	
-                lcd_text12(24, 10, "没有检测到U盘", 13, LCD_MODE_SET); 
+            else if(usb_export_status != 66)
+                lcd_text12(24, 10, "没有检测到U盘", 13, LCD_MODE_SET);
         }
     }
     lcd_update_all();
@@ -63,11 +62,11 @@ static void keypress(unsigned int key)
         {
             if(USB_Disk_RunStatus() == USB_FIND)
             {
-              if(usb_export_status==0)
-              {
-                usb_export_status = 1;
-                gb_usb_out(0xFE);// OUTPUT ALL info
-              }
+                if(usb_export_status == 0)
+                {
+                    usb_export_status = 1;
+                    gb_usb_out(0xFE);// OUTPUT ALL info
+                }
             }
             else
             {

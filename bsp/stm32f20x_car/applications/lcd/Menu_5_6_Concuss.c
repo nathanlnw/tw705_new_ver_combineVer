@@ -1,5 +1,5 @@
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 #include <rtdevice.h>
 
 extern struct rt_device dev_mma8451;

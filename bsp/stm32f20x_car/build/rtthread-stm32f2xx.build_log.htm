@@ -1,0 +1,1415 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.13.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: fdas sads, tct, LIC=8MZJJ-UCWUU-5BYEB-2LC1V-3ST4A-RCYDI
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.13.0.0
+Toolchain Path:  E:\KEIL_v5.13\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.13.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      UL2CM3.DLL V1.154.12.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+D:\tw705_newVersion\tw705_new_ver - 3-17\bsp\stm32f20x_car\project.uvproj
+Project File Date:  03/13/2015
+
+<h2>Output:</h2>
+Build target 'rt-thread_stm32f2xx'
+compiling application.c...
+applications\application.c(312): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "UINT *"
+              res = f_read(&file, buffer, sizeof(buffer), &len);
+applications\application.c(347): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "UINT *"
+          res = f_write(&file, str, strlen(str), &len);
+applications\application.c(377): warning:  #177-D: variable "res" was declared but never referenced
+      FRESULT res;
+applications\application.c(378): warning:  #177-D: variable "len" was declared but never referenced
+      int  len;
+applications\application.c(442): warning:  #188-D: enumerated type mixed with another type
+      res = SD_Init();
+applications\application.c(435): warning:  #177-D: variable "tempbuf" was declared but never referenced
+      char tempbuf[64];
+applications\application.c(484): warning:  #177-D: variable "bkpsram_ok" was declared but never referenced
+      uint8_t bkpsram_ok                = 0;
+applications\application.c(51): warning:  #177-D: function "adjust_mytime_now" was declared but never referenced
+  static void adjust_mytime_now( void )
+applications\application.c(295): warning:  #177-D: variable "sem_sd" was declared but never referenced
+  static struct rt_semaphore sem_sd;
+applications\application.c: 9 warnings, 0 errors
+compiling startup.c...
+applications\startup.c(222): warning:  #177-D: variable "st" was declared but never referenced
+      uint8_t                   st;
+applications\startup.c(295): warning:  #223-D: function "key_lcd_port_init" declared implicitly
+      key_lcd_port_init( );
+applications\startup.c(309): warning:  #223-D: function "send_info" declared implicitly
+      send_info();
+applications\startup.c(310): warning:  #223-D: function "jt808_gps_data_init" declared implicitly
+      jt808_gps_data_init( );
+applications\startup.c(319): warning:  #223-D: function "rt_application_init" declared implicitly
+      rt_application_init( );
+applications\startup.c(322): warning:  #223-D: function "rs232_init" declared implicitly
+      rs232_init( );
+applications\startup.c: 6 warnings, 0 errors
+compiling jt808.c...
+applications\jt808_camera.h(28): warning:  #231-D: declaration is not visible outside of function
+  void cam_ok( struct _Style_Cam_Requset_Para *para, uint32_t pic_id );
+applications\jt808_camera.h(29): warning:  #231-D: declaration is not visible outside of function
+  void cam_end( struct _Style_Cam_Requset_Para *para );
+applications\jt808.c(157): warning:  #177-D: variable "link_no" was declared but never referenced
+      uint8_t           link_no;
+applications\jt808.c(808): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(tempbuf, "HV%02d", u32_data);
+applications\jt808.c(809): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+          len1  = strlen( tempbuf );
+applications\jt808.c(812): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+          len2                  = strlen( tempbuf + 42 );
+applications\jt808.c(1141): warning:  #177-D: variable "msg" was declared but never referenced
+      u8                                                        *msg;
+applications\jt808.c(1143): warning:  #177-D: variable "fram_num" was declared but never referenced
+      u16                                                       fram_num;
+applications\jt808.c(1477): warning:  #1293-D: assignment in condition
+                          if((jt808_rx_buf_wr) && (cur_package_num = last_package_num + 1))
+applications\jt808.c(1390): warning:  #550-D: variable "first_fram_num" was set but never used
+      static uint16_t           first_fram_num          = 0;    ///第一包分包的包帧序号
+applications\jt808.c(1394): warning:  #550-D: variable "jt808_last_linkno" was set but never used
+      static uint8_t            jt808_last_linkno       = 0;    ///最后一次的链路编号
+applications\jt808.c(1854): warning:  #177-D: variable "len" was declared but never referenced
+      uint16_t len;
+applications\jt808.c(2015): warning:  #177-D: variable "buf" was declared but never referenced
+      uint8_t buf[2];
+applications\jt808.c(2016): warning:  #177-D: variable "len" was declared but never referenced
+      uint16_t len;
+applications\jt808.c(2341): warning:  #111-D: statement is unreachable
+      msglist_destroy( list_jt808_tx );
+applications\jt808.c(2287): warning:  #177-D: variable "iter" was declared but never referenced
+      MsgListNode                        *iter;
+applications\jt808.c(2288): warning:  #177-D: variable "pnodedata" was declared but never referenced
+      JT808_TX_NODEDATA  *pnodedata;
+applications\jt808.c(2442): warning:  #177-D: variable "pmsg" was declared but never referenced
+      uint8_t *pmsg;
+applications\jt808.c(2748): warning:  #550-D: variable "value" was set but never used
+      uint8_t value;
+applications\jt808.c(2946): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      jt808_tx_ack_ex(linkno, id, info, len );
+applications\jt808.c(64): warning:  #177-D: variable "total_send_error" was declared but never referenced
+  static uint16_t total_send_error = 0;   /*总的发送出错计数如果达到一定的次数要重启M66*/
+applications\jt808.c(72): warning:  #177-D: variable "tick_auth_heartbeat" was declared but never referenced
+  static rt_tick_t      tick_auth_heartbeat             = 0;
+applications\jt808.c(1021): warning:  #177-D: function "handle_rx_0x8702" was declared but never referenced
+  static int handle_rx_0x8702( uint8_t linkno, uint8_t *pmsg )
+applications\jt808.c(2099): warning:  #177-D: function "socket_iccard_iap_proc_old" was declared but never referenced
+  static void socket_iccard_iap_proc_old( void )
+applications\jt808.c: 24 warnings, 0 errors
+compiling hmi.c...
+applications\hmi.c(312): warning:  #223-D: function "ControlBitShift" declared implicitly
+      ControlBitShift( 0 );
+applications\hmi.c(313): warning:  #223-D: function "DataBitShift" declared implicitly
+      DataBitShift( 0 );
+applications\hmi.c(436): warning:  #223-D: function "ControlBitShift" declared implicitly
+              ControlBitShift(Control_74HC_1);
+applications\hmi.c(449): warning:  #223-D: function "ControlBitShift" declared implicitly
+              LCD_BL(1);
+applications\hmi.c: 4 warnings, 0 errors
+compiling msglist.c...
+compiling jt808_param.c...
+applications\jt808_param.c(588): warning:  #61-D: integer operation result is out of range
+      jt808_param.id_0xF032 |= BIT(31);
+applications\jt808_param.c(601): warning:  #223-D: function "sd_write_console" declared implicitly
+      sd_write_console(buf);
+applications\jt808_param.c(706): warning:  #223-D: function "sd_write_console" declared implicitly
+      sd_write_console(tempbuf);
+applications\jt808_param.c(620): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t  i, addr = 58 * 4096;
+applications\jt808_param.c(799): warning:  #223-D: function "sd_write_console" declared implicitly
+          sd_write_console(buf);
+applications\jt808_param.c(890): warning:  #177-D: variable "ver8" was declared but never referenced
+      uint8_t           ver8[16];
+applications\jt808_param.c(1002): warning:  #223-D: function "lcd_fill" declared implicitly
+              lcd_fill(0);
+applications\jt808_param.c(1003): warning:  #223-D: function "lcd_text12" declared implicitly
+              lcd_text12( 9, 11, "恢复出厂设置中...", 17, 1 );
+applications\jt808_param.c(1004): warning:  #223-D: function "lcd_update_all" declared implicitly
+              lcd_update_all();
+applications\jt808_param.c(964): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t           i;
+applications\jt808_param.c(965): warning:  #177-D: variable "ver8" was declared but never referenced
+      uint8_t           ver8[16];
+applications\jt808_param.c(966): warning:  #177-D: variable "flash_ver" was declared but never referenced
+      uint32_t  flash_ver;
+applications\jt808_param.c(968): warning:  #177-D: variable "addr" was declared but never referenced
+      uint32_t  addr;
+applications\jt808_param.c(1047): warning:  #940-D: missing return statement at end of non-void function "factory_bksram"
+  }
+applications\jt808_param.c(1184): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                  if(strlen(value) < tbl_id_lookup[i].type)
+applications\jt808_param.c(1188): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+                      strncpy( (char *)psrc, (char *)value, strlen(value) );
+applications\jt808_param.c(1377): warning:  #177-D: variable "u32data" was declared but never referenced
+      uint32_t u32data;
+applications\jt808_param.c(1378): warning:  #177-D: variable "p" was declared but never referenced
+      uint8_t *p;
+applications\jt808_param.c(1502): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+      param_set( 0x0010, s );
+applications\jt808_param.c(1510): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+      param_set( 0x0013, ip );
+applications\jt808_param.c(1511): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+      param_set( 0x0018, port );
+applications\jt808_param.c(1522): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      len = strlen( s );
+applications\jt808_param.c(1520): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t len, i;
+applications\jt808_param.c(1918): warning:  #223-D: function "over_time_reset" declared implicitly
+      over_time_reset();
+applications\jt808_param.c(1220): warning:  #177-D: function "param_put_str" was declared but never referenced
+  static void param_put_str( uint16_t id, uint8_t *value )
+applications\jt808_param.c: 25 warnings, 0 errors
+compiling jt808_gps.c...
+applications\jt808_gps.c(256): warning:  #940-D: missing return statement at end of non-void function "calc_distance"
+  }
+applications\jt808_gps.c(220): warning:  #550-D: variable "last_speed_10x" was set but never used
+      static uint16_t   last_speed_10x = 0;
+applications\jt808_gps.c(364): warning:  #550-D: variable "ack_seq" was set but never used
+      uint16_t          ack_seq;
+applications\jt808_gps.c(538): warning:  #177-D: variable "tempbuf" was declared but never referenced
+      char tempbuf[64];
+applications\jt808_gps.c(770): warning:  #117-D: non-void function "jt808_report_get" should return a value
+              return;
+applications\jt808_gps.c(684): warning:  #550-D: variable "get_size" was set but never used
+      uint16_t          get_size;               /*获取记录的大小*/
+applications\jt808_gps.c(841): warning:  #61-D: integer operation result is out of range
+      if(jt808_param.id_0xF032 & BIT(31))                       ///对于没有校准脉冲系数的车辆，将该值填充为GPS速度
+applications\jt808_gps.c(819): warning:  #177-D: variable "mytime_last_gps" was declared but never referenced
+      uint32_t          mytime_last_gps;
+applications\jt808_gps.c(1363): warning:  #9-D: nested comment is not allowed
+                //*(__IO uint32_t*)( BKPSRAM_BASE + 4 ) = utc_now;
+applications\jt808_gps.c(1535): warning:  #223-D: function "gps_write" declared implicitly
+          gps_write(gps_string[mode - 1]);
+applications\jt808_gps.c(1587): warning:  #223-D: function "gps_write" declared implicitly
+          gps_write(gps_string[mode - 1]);
+applications\jt808_gps.c(1697): warning:  #223-D: function "SpeedingFatigueProc" declared implicitly
+          SpeedingFatigueProc( );              /*行车记录仪数据处理*/
+applications\jt808_gps.c(1709): warning:  #223-D: function "gps_write" declared implicitly
+          gps_write("$PHXM103,5,0,0,1*3B\r\n");
+applications\jt808_gps.c(1766): warning:  #223-D: function "can_pack_init" declared implicitly
+      can_pack_init( );
+applications\jt808_gps.c(1769): warning:  #223-D: function "Cam_Flash_InitPara" declared implicitly
+      Cam_Flash_InitPara( 0 );
+applications\jt808_gps.c(1763): warning:  #177-D: variable "head" was declared but never referenced
+      GPS_REPORT_HEAD head;
+applications\jt808_gps.c(199): warning:  #177-D: function "linux_mktime" was declared but never referenced
+  static __inline unsigned long linux_mktime( unsigned int year, unsigned int mon,
+applications\jt808_gps.c: 17 warnings, 0 errors
+compiling jt808_camera.c...
+applications\jt808_camera.c(190): warning:  #111-D: statement is unreachable
+          break;
+applications\jt808_camera.c(897): warning:  #177-D: variable "TempAddress" was declared but never referenced
+      u32                                       TempAddress;
+applications\jt808_camera.c: 2 warnings, 0 errors
+compiling jt808_area.c...
+applications\jt808_area.c(1334): warning:  #550-D: variable "msg_len" was set but never used
+      u16                               msg_len;
+applications\jt808_area.c(1550): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+          Hex_To_Ascii(tempbuf + strlen(tempbuf), (u8 *)area_alarm, sizeof(Type_AREA_ALARM));
+applications\jt808_area.c(1551): warning:  #223-D: function "sd_write_console" declared implicitly
+          sd_write_console(tempbuf);
+applications\jt808_area.c(1572): warning:  #177-D: variable "empty_num" was declared but never referenced
+      u8 empty_num = 0xFF;
+applications\jt808_area.c(3031): warning:  #61-D: integer operation result is out of range
+              rt_kprintf("\n area_alarm = %d,ret=0x%04X,BIT(31)=0x%04X", area_alarm_array[i].alarm_bit & 0x1F, retdata, BIT(31));
+applications\jt808_area.c(3009): warning:  #177-D: variable "area_alarm" was declared but never referenced
+      Type_AREA_ALARM area_alarm;
+applications\jt808_area.c: 6 warnings, 0 errors
+compiling jt808_update.c...
+applications\jt808_update.c(491): warning:  #550-D: variable "ret" was set but never used
+      u8        ret = 0;
+applications\jt808_update.c(878): warning:  #177-D: label "UPDATA_OK" was declared but never referenced
+  UPDATA_OK:
+applications\jt808_update.c(907): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+      sprintf(tempbuf, "卡号=%s", jt808_param.id_0xF006);
+applications\jt808_update.c(908): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      debug_write(tempbuf);
+applications\jt808_update.c(909): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+      sprintf(tempbuf, "%s/%d", jt808_param.id_0x0013, jt808_param.id_0x0018);
+applications\jt808_update.c(910): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      debug_write(tempbuf);
+applications\jt808_update.c(911): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+      sprintf(tempbuf, "%s:%d", jt808_param.id_0x0017, jt808_param.id_0xF031);
+applications\jt808_update.c(912): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      debug_write(tempbuf);
+applications\jt808_update.c(913): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+      sprintf(tempbuf, "车辆类型=%s", jt808_param.id_0xF00A);
+applications\jt808_update.c(914): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      debug_write(tempbuf);
+applications\jt808_update.c(919): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+      sprintf(tempbuf, "车牌=%s", jt808_param.id_0x0083);
+applications\jt808_update.c(920): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      debug_write(tempbuf);
+applications\jt808_update.c(903): warning:  #177-D: variable "i" was declared but never referenced
+      uint16_t  i, j;
+applications\jt808_update.c(903): warning:  #177-D: variable "j" was declared but never referenced
+      uint16_t  i, j;
+applications\jt808_update.c(32): warning:  #550-D: variable "updata_delay" was set but never used
+  static uint16_t               updata_delay = 5;               ///发送0x8003数据的间隔，单位为秒
+applications\jt808_update.c(33): warning:  #550-D: variable "updata_packnum" was set but never used
+  static uint16_t               updata_packnum = 2;             ///每次补包的数量，默认为2
+applications\jt808_update.c(34): warning:  #550-D: variable "updata_run_state" was set but never used
+  static uint8_t                updata_run_state = 0;   ///0表示没有升级，1表示升级中，2表示升级ok
+applications\jt808_update.c: 17 warnings, 0 errors
+compiling jt808_misc.c...
+applications\jt808_misc.c(645): warning:  #177-D: variable "j" was declared but never referenced
+      uint16_t  i, j;
+applications\jt808_misc.c(648): warning:  #550-D: variable "res" was set but never used
+      uint8_t           count, res = 0;
+applications\jt808_misc.c(651): warning:  #177-D: variable "tmpbuf" was declared but never referenced
+      uint16_t  tmpbuf[64];
+applications\jt808_misc.c(807): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+          tts_write( pmsg + 15, len );
+applications\jt808_misc.c(792): warning:  #177-D: variable "u32_data" was declared but never referenced
+      uint32_t                  u32_data;
+applications\jt808_misc.c(793): warning:  #550-D: variable "id" was set but never used
+      uint8_t                   id;
+applications\jt808_misc.c(867): warning:  #177-D: variable "dialbuf" was declared but never referenced
+      char              dialbuf[64];
+applications\jt808_misc.c(899): warning:  #550-D: variable "res" was set but never used
+      uint8_t           count, res = 0;
+applications\jt808_misc.c: 8 warnings, 0 errors
+compiling jt808_gps_pack.c...
+applications\jt808_gps_pack.c(538): warning:  #550-D: variable "ack_seq" was set but never used
+      uint16_t          ack_seq;
+applications\jt808_gps_pack.c(540): warning:  #177-D: variable "addr" was declared but never referenced
+      uint32_t          addr;
+applications\jt808_gps_pack.c(649): warning:  #177-D: variable "p_addr" was declared but never referenced
+      uint32_t *p_addr;
+applications\jt808_gps_pack.c(728): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      if( strncmp( pinfo + 3, "GGA,", 4 ) == 0 )
+applications\jt808_gps_pack.c(756): warning:  #550-D: variable "get_size" was set but never used
+      uint16_t          get_size;               /*获取记录的大小*/
+applications\jt808_gps_pack.c(759): warning:  #177-D: variable "p_addr" was declared but never referenced
+      uint32_t          *p_addr;
+applications\jt808_gps_pack.c: 6 warnings, 0 errors
+compiling jt808_util.c...
+applications\jt808_util.c(247): warning:  #223-D: function "Get_Month_Day" declared implicitly
+          day = Get_Month_Day(i, leapyear);
+applications\jt808_util.c(266): warning:  #177-D: variable "year" was declared but never referenced
+      unsigned int      year;
+applications\jt808_util.c(267): warning:  #177-D: variable "month" was declared but never referenced
+      unsigned int      month;
+applications\jt808_util.c(268): warning:  #177-D: variable "day" was declared but never referenced
+      unsigned int      day;
+applications\jt808_util.c(269): warning:  #177-D: variable "hour" was declared but never referenced
+      unsigned int      hour;
+applications\jt808_util.c(270): warning:  #177-D: variable "minute" was declared but never referenced
+      unsigned int      minute;
+applications\jt808_util.c(271): warning:  #177-D: variable "sec" was declared but never referenced
+      unsigned int      sec;
+applications\jt808_util.c(341): warning:  #223-D: function "beep" declared implicitly
+      beep(5, 5, 5);
+applications\jt808_util.c(294): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t i;
+applications\jt808_util.c(526): warning:  #223-D: function "debug_write" declared implicitly
+              debug_write("BKP_SRAM错误");
+applications\jt808_util.c(531): warning:  #223-D: function "param_load_bksram" declared implicitly
+      tmp = param_load_bksram();
+applications\jt808_util.c(534): warning:  #223-D: function "debug_write" declared implicitly
+          debug_write("BKP存储OK!");
+applications\jt808_util.c(539): warning:  #223-D: function "debug_write" declared implicitly
+          debug_write("BKP_SRAM参数丢失");
+applications\jt808_util.c(515): warning:  #177-D: variable "buf" was declared but never referenced
+      uint8_t                   buf[8];
+applications\jt808_util.c(582): warning:  #223-D: function "vsnprintf" declared implicitly
+      length = vsnprintf(log_buf, sizeof(log_buf), fmt, args);
+applications\jt808_util.c(583): warning:  #223-D: function "rt_hw_console_output" declared implicitly
+      rt_hw_console_output(log_buf);
+applications\jt808_util.c(578): warning:  #550-D: variable "length" was set but never used
+      rt_size_t length;
+applications\jt808_util.c: 17 warnings, 0 errors
+compiling jt808_vehicle.c...
+applications\jt808_camera.h(28): warning:  #231-D: declaration is not visible outside of function
+  void cam_ok( struct _Style_Cam_Requset_Para *para, uint32_t pic_id );
+applications\jt808_camera.h(29): warning:  #231-D: declaration is not visible outside of function
+  void cam_end( struct _Style_Cam_Requset_Para *para );
+applications\jt808_vehicle.c(118): warning:  #177-D: variable "pdestbuf" was declared but never referenced
+      uint8_t                                   *pdestbuf;
+applications\jt808_vehicle.c(119): warning:  #177-D: variable "datalen" was declared but never referenced
+      uint16_t                          datalen;
+applications\jt808_vehicle.c(120): warning:  #177-D: variable "cam_para" was declared but never referenced
+      Style_Cam_Requset_Para    cam_para;
+applications\jt808_vehicle.c(121): warning:  #550-D: variable "Tigger" was set but never used
+      CAM_TRIGGER                       Tigger;
+applications\jt808_vehicle.c(360): warning:  #223-D: function "buzzer_pro" declared implicitly
+      buzzer_pro();
+applications\jt808_vehicle.c(383): warning:  #223-D: function "Lcd_hardInit_timer" declared implicitly
+                Lcd_hardInit_timer();// new lcd   add  by  nathan
+applications\jt808_vehicle.c(355): warning:  #177-D: variable "data_u32_1" was declared but never referenced
+      uint32_t data_u32_1;
+applications\jt808_vehicle.c(542): warning:  #177-D: variable "TIM_TimeBaseStructure" was declared but never referenced
+      TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
+applications\jt808_vehicle.c(600): warning:  #177-D: variable "tempu32" was declared but never referenced
+      uint32_t tempu32 = 0;
+applications\jt808_vehicle.c(701): warning:  #223-D: function "beep" declared implicitly
+                      beep(4, 4, 1);
+applications\jt808_vehicle.c(850): warning:  #223-D: function "Init_4442" declared implicitly
+      Init_4442( );
+applications\jt808_vehicle.c: 13 warnings, 0 errors
+compiling jt808_sms.c...
+applications\jt808_sms.c(594): warning:  #223-D: function "Cam_takepic" declared implicitly
+          Cam_takepic(value[0] - '0', 0, 1, 8);
+applications\jt808_sms.c(624): warning:  #225-D: the format string ends before this argument
+                       jt808_param.id_0x0017,
+applications\jt808_sms.c(445): warning:  #177-D: variable "ip" was declared but never referenced
+      char ip[32];
+applications\jt808_sms.c(820): warning:  #223-D: function "sd_write_console" declared implicitly
+      sd_write_console(tmpbuf);
+applications\jt808_sms.c: 4 warnings, 0 errors
+compiling jt808_SpeedFatigue.c...
+applications\jt808_SpeedFatigue.c(202): warning:  #550-D: variable "mytime_overspeed_start" was set but never used
+      static MYTIME     mytime_overspeed_start;
+applications\jt808_SpeedFatigue.c: 1 warning, 0 errors
+compiling board.c...
+compiling usb_bsp.c...
+drivers\usb_bsp.c(312): warning:  #177-D: variable "GPIO_InitStructure" was declared but never referenced
+      GPIO_InitTypeDef GPIO_InitStructure;
+drivers\usb_bsp.c: 1 warning, 0 errors
+compiling usbh_usr.c...
+drivers\usbh_usr.c(553): warning:  #177-D: variable "ret" was declared but never referenced
+      int               ret;
+drivers\usbh_usr.c(388): warning:  #177-D: variable "file" was declared but never referenced
+  static FIL    file;
+drivers\usbh_usr.c: 2 warnings, 0 errors
+compiling printer.c...
+drivers\printer.c(1348): warning:  #177-D: function "printer_get_str_line_old" was declared but never referenced
+  static void printer_get_str_line_old( void )
+drivers\printer.c: 1 warning, 0 errors
+compiling ringbuffer.c...
+compiling usbh.c...
+drivers\usbh.c(42): warning:  #223-D: function "dfs_init" declared implicitly
+      dfs_init();
+drivers\usbh.c(40): warning:  #177-D: variable "ret" was declared but never referenced
+      int ret;
+drivers\usbh.c(93): warning:  #177-D: variable "tid" was declared but never referenced
+      rt_thread_t tid;
+drivers\usbh.c: 3 warnings, 0 errors
+compiling gps.c...
+drivers\gps.c(450): warning:  #61-D: integer operation result is out of range
+      if((jt808_param.id_0xF032 & BIT(31)) || (speed_err_counter > 30))
+drivers\gps.c(523): warning:  #223-D: function "gps_pack_proc" declared implicitly
+                  gps_pack_proc( buf.body, buf.wr );
+drivers\gps.c(539): warning:  #223-D: function "GB19056_VDR_Save_Process" declared implicitly
+          GB19056_VDR_Save_Process();
+drivers\gps.c(556): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(tempbuf, "%d秒未定位,重启", gps_reset_time);
+drivers\gps.c(557): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+              debug_write(tempbuf);
+drivers\gps.c(1180): warning:  #940-D: missing return statement at end of non-void function "gps_mode"
+  }
+drivers\gps.c(1188): warning:  #940-D: missing return statement at end of non-void function "gps_reset"
+  }
+drivers\gps.c(357): warning:  #177-D: function "uart5_putc" was declared but never referenced
+  static void uart5_putc( const char c )
+drivers\gps.c(664): warning:  #177-D: function "cleanup" was declared but never referenced
+  static void cleanup( struct rt_thread *tid )
+drivers\gps.c(673): warning:  #177-D: function "msg_uart_usb" was declared but never referenced
+  static void msg_uart_usb( char *str )
+drivers\gps.c: 10 warnings, 0 errors
+compiling mma8451.c...
+drivers\mma8451.c(641): warning:  #177-D: variable "ret" was declared but never referenced
+      uint8_t ret, value1, value2, value3;
+drivers\mma8451.c(641): warning:  #177-D: variable "value1" was declared but never referenced
+      uint8_t ret, value1, value2, value3;
+drivers\mma8451.c(641): warning:  #177-D: variable "value2" was declared but never referenced
+      uint8_t ret, value1, value2, value3;
+drivers\mma8451.c(641): warning:  #177-D: variable "value3" was declared but never referenced
+      uint8_t ret, value1, value2, value3;
+drivers\mma8451.c(1025): warning:  #550-D: variable "dy" was set but never used
+      double dx, dy, dz;
+drivers\mma8451.c(1125): warning:  #177-D: variable "res" was declared but never referenced
+      uint16_t                  res;
+drivers\mma8451.c(1126): warning:  #177-D: variable "param1" was declared but never referenced
+      uint16_t                  param1  = 0x8000, param2 = 0x1e02;
+drivers\mma8451.c(1126): warning:  #177-D: variable "param2" was declared but never referenced
+      uint16_t                  param1  = 0x8000, param2 = 0x1e02;
+drivers\mma8451.c(1127): warning:  #177-D: variable "i" was declared but never referenced
+      uint16_t                  i               = 0;
+drivers\mma8451.c(1192): warning:  #550-D: variable "ret" was set but never used
+      uint8_t ret, value1, value2, value3;
+drivers\mma8451.c(1270): warning:  #177-D: variable "code" was declared but never referenced
+      uint8_t code = *(uint8_t *)arg;
+drivers\mma8451.c(1271): warning:  #177-D: variable "i" was declared but never referenced
+      int               i;
+drivers\mma8451.c(240): warning:  #177-D: function "I2C_delay5ms" was declared but never referenced
+  static void I2C_delay5ms( void )
+drivers\mma8451.c(1110): warning:  #177-D: variable "sensor_info" was declared but never referenced
+  static uint8_t sensor_info[2] = { 0 };
+drivers\mma8451.c(1411): warning:  #177-D: function "cb_tmr_sensor" was declared but never referenced
+  static void cb_tmr_sensor( void *parameter )
+drivers\mma8451.c: 15 warnings, 0 errors
+compiling vuart.c...
+drivers\vuart.c(95): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                      if(strncmp(GB19056.rx_buf, "deviceid", 8) == 0)
+drivers\vuart.c(139): warning:  #177-D: variable "USART_InitStructure" was declared but never referenced
+      USART_InitTypeDef USART_InitStructure;
+drivers\vuart.c: 2 warnings, 0 errors
+compiling m66.c...
+drivers\m66.c(154): warning:  #188-D: enumerated type mixed with another type
+  ENUM_MODEM_STYLE      modem_style = 0;                        ///模块类型，0表示未知，1表示为M66,2表示为M50。
+drivers\m66.c(512): warning:  #177-D: variable "mobile" was declared but never referenced
+      static char mobile[6];
+drivers\m66.c(612): warning:  #550-D: variable "mobile" was set but never used
+      static char mobile[6];
+drivers\m66.c(641): warning:  #550-D: variable "mobile" was set but never used
+      static char mobile[6];
+drivers\m66.c(787): warning:  #181-D: argument is incompatible with corresponding format string conversion
+      if(sscanf(psrc, "%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]) == 4)
+drivers\m66.c(787): warning:  #181-D: argument is incompatible with corresponding format string conversion
+      if(sscanf(psrc, "%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]) == 4)
+drivers\m66.c(787): warning:  #181-D: argument is incompatible with corresponding format string conversion
+      if(sscanf(psrc, "%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]) == 4)
+drivers\m66.c(787): warning:  #181-D: argument is incompatible with corresponding format string conversion
+      if(sscanf(psrc, "%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]) == 4)
+drivers\m66.c(840): warning:  #940-D: missing return statement at end of non-void function "resp_linking_M50"
+  }
+drivers\m66.c(826): warning:  #177-D: variable "psrc" was declared but never referenced
+      char *psrc = p;
+drivers\m66.c(866): warning:  #177-D: variable "no_sim_counter" was declared but never referenced
+      static uint8_t no_sim_counter = 0;
+drivers\m66.c(895): warning:  #177-D: variable "psrc" was declared but never referenced
+      char *psrc = p;
+drivers\m66.c(896): warning:  #177-D: variable "buf" was declared but never referenced
+      char buf[64];
+drivers\m66.c(915): warning:  #177-D: variable "psrc" was declared but never referenced
+      char *psrc = p;
+drivers\m66.c(916): warning:  #177-D: variable "buf" was declared but never referenced
+      char buf[64];
+drivers\m66.c(939): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+              strtrim(record_handle, ' ');
+drivers\m66.c(931): warning:  #177-D: variable "psrc" was declared but never referenced
+      char *psrc = p;
+drivers\m66.c(970): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+          printf_hex_data(psrc, infolen);
+drivers\m66.c(1044): warning:  #177-D: variable "mobile" was declared but never referenced
+      static char mobile[6];
+drivers\m66.c(1356): warning:  #177-D: label "lbl_poweron_start" was declared but never referenced
+  lbl_poweron_start:
+drivers\m66.c(1498): warning:  #223-D: function "sd_write_console" declared implicitly
+      sd_write_console("GSM模块POWER_OFF!");
+drivers\m66.c(1640): warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sprintf( buf, "AT%ETCPIP=\"%s\",\"%s\"\r\n", dial_param.user, dial_param.psw );
+drivers\m66.c(1640): warning:  #224-D: the format string requires additional arguments
+              sprintf( buf, "AT%ETCPIP=\"%s\",\"%s\"\r\n", dial_param.user, dial_param.psw );
+drivers\m66.c(1746): warning:  #181-D: argument is incompatible with corresponding format string conversion
+              sprintf( buf, "AT%ETCPIP=\"%s\",\"%s\"\r\n", dial_param.user, dial_param.psw );
+drivers\m66.c(1746): warning:  #224-D: the format string requires additional arguments
+              sprintf( buf, "AT%ETCPIP=\"%s\",\"%s\"\r\n", dial_param.user, dial_param.psw );
+drivers\m66.c(1801): warning:  #177-D: variable "at_cmd_resp" was declared but never referenced
+      AT_CMD_RESP at_cmd_resp;
+drivers\m66.c(1880): warning:  #177-D: variable "at_cmd_resp" was declared but never referenced
+      AT_CMD_RESP at_cmd_resp;
+drivers\m66.c(2083): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+      printf_hex_data(buf_send, 1);
+drivers\m66.c(2091): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+              printf_hex_data(buf_send2, 2);
+drivers\m66.c(2096): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+              printf_hex_data(buf_send1, 2);
+drivers\m66.c(2109): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+          printf_hex_data(buf_send2, 2);
+drivers\m66.c(2114): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+          printf_hex_data(buf_send1, 2);
+drivers\m66.c(2123): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+      printf_hex_data(buf_send, 1);
+drivers\m66.c(2050): warning:  #177-D: variable "buf_end" was declared but never referenced
+      char              buf_end[4] = { '"', 0x0d, 0x0a, 0x0 };
+drivers\m66.c(2233): warning:  #940-D: missing return statement at end of non-void function "socket_write"
+  }
+drivers\m66.c(2239): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t i;
+drivers\m66.c(2290): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t i;
+drivers\m66.c(2351): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t i;
+drivers\m66.c(2463): warning:  #177-D: variable "st" was declared but never referenced
+      int                       st, index, count;
+drivers\m66.c(2463): warning:  #177-D: variable "index" was declared but never referenced
+      int                       st, index, count;
+drivers\m66.c(2463): warning:  #177-D: variable "count" was declared but never referenced
+      int                       st, index, count;
+drivers\m66.c(2464): warning:  #177-D: variable "buf" was declared but never referenced
+      char              buf[40];                                        /*160个OCT需要320byte*/
+drivers\m66.c(2484): warning:  #177-D: variable "pmsg" was declared but never referenced
+      char                      *pmsg;
+drivers\m66.c(2584): warning:  #177-D: variable "j" was declared but never referenced
+      uint32_t            i, j;
+drivers\m66.c(2588): warning:  #177-D: variable "pack_head" was declared but never referenced
+      TypeDF_PackageHead  pack_head;
+drivers\m66.c(2676): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+          rec_hex_len = Ascii_To_Hex(rec_hex, p + i + 1, len_local);
+drivers\m66.c(2650): warning:  #177-D: variable "namelen" was declared but never referenced
+      uint16_t  namelen = 0, len_local = 0;
+drivers\m66.c(2655): warning:  #177-D: variable "j" was declared but never referenced
+      uint32_t  i = 0, j = 0;
+drivers\m66.c(2737): warning:  #550-D: variable "err" was set but never used
+      rt_err_t          err;
+drivers\m66.c(2738): warning:  #177-D: variable "pmsg" was declared but never referenced
+      char                      *pmsg;
+drivers\m66.c(2741): warning:  #550-D: variable "sktart_tick" was set but never used
+      static uint32_t   sktart_tick = 0;
+drivers\m66.c(2820): warning:  #177-D: variable "tick" was declared but never referenced
+      static uint32_t tick = 0;
+drivers\m66.c(2910): warning:  #177-D: variable "st" was declared but never referenced
+      int                       st, index, count;
+drivers\m66.c(2910): warning:  #177-D: variable "count" was declared but never referenced
+      int                       st, index, count;
+drivers\m66.c(2911): warning:  #177-D: variable "buf" was declared but never referenced
+      char              buf[40];                                        /*160个OCT需要320byte*/
+drivers\m66.c(3011): warning:  #167-D: argument of type "uint32_t *" is incompatible with parameter of type "rt_uint32_t *"
+      if( rt_mb_recv( &mb_sms, &value, 0 ) != RT_EOK ) /*收到短信操作*/
+drivers\m66.c(2986): warning:  #177-D: variable "j" was declared but never referenced
+      uint32_t  j;
+drivers\m66.c(3062): warning:  #177-D: variable "value" was declared but never referenced
+      uint32_t  value;
+drivers\m66.c(3063): warning:  #177-D: variable "j" was declared but never referenced
+      uint32_t  j;
+drivers\m66.c(3064): warning:  #177-D: variable "sms_send_str" was declared but never referenced
+      char              *sms_send_str;
+drivers\m66.c(3067): warning:  #177-D: variable "len" was declared but never referenced
+      uint16_t  len;
+drivers\m66.c(3070): warning:  #177-D: variable "oldstate" was declared but never referenced
+      T_GSM_STATE oldstate;
+drivers\m66.c(3131): warning:  #177-D: label "TEL_END" was declared but never referenced
+  TEL_END:
+drivers\m66.c(3140): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      strcpy(tel_phonenum, phonenum);
+drivers\m66.c(3170): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+              printf_hex_data(psrc, infolen);
+drivers\m66.c(3171): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+              gprs_rx( linkno, psrc, infolen );
+drivers\m66.c(3157): warning:  #177-D: variable "c" was declared but never referenced
+      char      c, *pmsg;
+drivers\m66.c(3158): warning:  #550-D: variable "pdst" was set but never used
+      char      *psrc = RT_NULL, *pdst = RT_NULL;
+drivers\m66.c(3297): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+          gprs_rx( linkno, psrc, infolen );
+drivers\m66.c(3392): warning:  #223-D: function "jt808_tx_data_proc" declared implicitly
+              jt808_tx_data_proc();
+drivers\m66.c(408): warning:  #177-D: function "uart4_putc" was declared but never referenced
+  static void uart4_putc( const char c )
+drivers\m66.c(1582): warning:  #177-D: function "rt_thread_gsm_gprs_M66_OLD" was declared but never referenced
+  static void rt_thread_gsm_gprs_M66_OLD( void *parameter )
+drivers\m66.c: 72 warnings, 0 errors
+compiling sst25.c...
+drivers\sst25.c(129): warning:  #940-D: missing return statement at end of non-void function "sst25_info"
+  }
+drivers\sst25.c(609): warning:  #177-D: variable "delay_counter" was declared but never referenced
+      uint32_t                  delay_counter;
+drivers\sst25.c(890): warning:  #177-D: variable "delay_counter" was declared but never referenced
+      uint32_t                  delay_counter;
+drivers\sst25.c(1005): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t  i, wr_addr;
+drivers\sst25.c(1177): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+      sst25_write_through(addr, data, strlen(data));
+drivers\sst25.c: 5 warnings, 0 errors
+compiling rs485.c...
+drivers\rs485.c(548): warning:  #223-D: function "rs232_proc" declared implicitly
+          rs232_proc();
+drivers\rs485.c(538): warning:  #177-D: variable "res" was declared but never referenced
+      rt_err_t res;
+drivers\rs485.c(39): warning:  #550-D: variable "last_rx_tick" was set but never used
+  static uint32_t       last_rx_tick    = 0;
+drivers\rs485.c(512): warning:  #177-D: function "usart2_putc" was declared but never referenced
+  static void usart2_putc( const char c )
+drivers\rs485.c: 4 warnings, 0 errors
+compiling camera.c...
+drivers\camera.c(926): warning:  #550-D: variable "power_cam_on" was set but never used
+      static uint8_t                            power_cam_on = 1;
+drivers\camera.c(930): warning:  #177-D: variable "ch" was declared but never referenced
+      u8                                                        ch;
+drivers\camera.c(225): warning:  #177-D: function "Cam_Flash_SavePic" was declared but never referenced
+  static rt_err_t Cam_Flash_SavePic( TypeDF_PackageHead *phead )
+drivers\camera.c: 3 warnings, 0 errors
+compiling rtc.c...
+compiling SLE4442.c...
+drivers\SLE4442.c(809): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                      strncpy(jt808_param.id_0xF008, buf1, 10);
+drivers\SLE4442.c(810): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                      strncpy(jt808_param.id_0xF009, buf2, 18);
+drivers\SLE4442.c(811): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                      strncpy(jt808_param.id_0xF00B, buf5, 20);
+drivers\SLE4442.c(812): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *restrict"
+                      strncpy(jt808_param.id_0xF00C, buf6, 32);
+drivers\SLE4442.c(813): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                      sprintf(buf6, "发证机构:%s", jt808_param.id_0xF00C);
+drivers\SLE4442.c(814): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                      debug_write( buf6 );
+drivers\SLE4442.c(815): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                      sprintf(buf6, "驾驶证号码:%s", jt808_param.id_0xF009);
+drivers\SLE4442.c(816): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                      debug_write( buf6 );
+drivers\SLE4442.c(817): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                      sprintf(buf6, "驾驶资格证:%s", jt808_param.id_0xF00B);
+drivers\SLE4442.c(818): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                      debug_write( buf6 );
+drivers\SLE4442.c(819): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+                      sprintf(buf6, "姓名:%s", jt808_param.id_0xF008);
+drivers\SLE4442.c(820): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+                      debug_write( buf6 );
+drivers\SLE4442.c(900): warning:  #177-D: variable "pnodedata" was declared but never referenced
+      JT808_TX_NODEDATA          *pnodedata;
+drivers\SLE4442.c(1015): warning:  #177-D: variable "pnodedata" was declared but never referenced
+      JT808_TX_NODEDATA          *pnodedata;
+drivers\SLE4442.c: 14 warnings, 0 errors
+compiling diskio_sd.c...
+drivers\diskio_sd.c(230): warning:  #177-D: variable "buf" was declared but never referenced
+      uint8_t                   buf[4];
+drivers\diskio_sd.c(231): warning:  #177-D: variable "utc_bkp" was declared but never referenced
+      uint32_t          utc_bkp, utc;
+drivers\diskio_sd.c(231): warning:  #177-D: variable "utc" was declared but never referenced
+      uint32_t          utc_bkp, utc;
+drivers\diskio_sd.c: 3 warnings, 0 errors
+compiling sd_test.c...
+drivers\sd_test.c(32): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "UINT *"
+              res = f_read(&file, buffer, sizeof(buffer), &len);
+drivers\sd_test.c(65): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "UINT *"
+              res = f_read(&file, buffer, sizeof(buffer), &len);
+drivers\sd_test.c(73): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "UINT *"
+          res = f_write(&file, str, strlen(str), &len);
+drivers\sd_test.c(104): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "UINT *"
+              res = f_read(&file, buffer, sizeof(buffer), &len);
+drivers\sd_test.c(112): warning:  #167-D: argument of type "int *" is incompatible with parameter of type "UINT *"
+          res = f_write(&file, str, strlen(str), &len);
+drivers\sd_test.c(147): warning:  #188-D: enumerated type mixed with another type
+      res = SD_Init();
+drivers\sd_test.c(152): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          SD_GetCID(tempbuf);
+drivers\sd_test.c(154): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+          printf_hex_data(tempbuf, 16);
+drivers\sd_test.c(155): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+          SD_GetCSD(tempbuf);
+drivers\sd_test.c(157): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const u8 *"
+          printf_hex_data(tempbuf, 16);
+drivers\sd_test.c: 10 warnings, 0 errors
+compiling SPI_SD_driver.c...
+compiling can.c...
+drivers\can.c(71): warning:  #177-D: function "Delay" was declared but never referenced
+  static void Delay(void);
+drivers\can.c: 1 warning, 0 errors
+compiling jt808_can.c...
+applications\jt808_can.c(83): warning:  #550-D: variable "ack_seq" was set but never used
+      uint16_t          ack_seq;
+applications\jt808_can.c(85): warning:  #177-D: variable "addr" was declared but never referenced
+      uint32_t          addr;
+applications\jt808_can.c(209): warning:  #177-D: variable "p_addr" was declared but never referenced
+      uint32_t *p_addr;
+applications\jt808_can.c(365): warning:  #550-D: variable "get_size" was set but never used
+      uint16_t          get_size;               /*获取记录的大小*/
+applications\jt808_can.c(368): warning:  #177-D: variable "p_addr" was declared but never referenced
+      uint32_t          *p_addr;
+applications\jt808_can.c: 5 warnings, 0 errors
+compiling RS232.c...
+drivers\RS232.c(130): warning:  #177-D: variable "bytestuff" was declared but never referenced
+      static uint8_t bytestuff = 0;
+drivers\RS232.c(131): warning:  #177-D: variable "rx_wr" was declared but never referenced
+      uint16_t rx_wr = 0;
+drivers\RS232.c(312): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+              oil_high_average = AssicBufToUL(buf, 5);
+drivers\RS232.c(328): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+              oil_high = AssicBufToUL(buf, 5);
+drivers\RS232.c(334): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+              temp_u32data = AssicBufToUL(buf, 5);
+drivers\RS232.c(338): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+              Ascii_To_Hex(&crc2, buf, 1);
+drivers\RS232.c(351): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                      sprintf(buf, "油hv=%d,h=%d,%d", oil_high_average / 10, oil_high / 10, oil_value);
+drivers\RS232.c(352): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                      debug_write(buf);
+drivers\RS232.c(451): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              if (strncmp(oil_buf_rx, "*YH", 3) == 0)
+drivers\RS232.c(434): warning:  #177-D: variable "psrc" was declared but never referenced
+      char               *psrc;
+drivers\RS232.c(514): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+      RS232_write(buf_send, 1 );
+drivers\RS232.c(519): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+              RS232_write( buf_send2, 2 );
+drivers\RS232.c(523): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+              RS232_write(buf_send1, 2 );
+drivers\RS232.c(530): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "const uint8_t *"
+      RS232_write( buf_send, 1 );
+drivers\RS232.c(487): warning:  #550-D: variable "len" was set but never used
+      u16               len = 0, wr = 0, i = 0;
+drivers\RS232.c(590): warning:  #111-D: statement is unreachable
+              break;
+drivers\RS232.c(659): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+              strncpy(jt808_param.id_0xF008, iccard_buf_rx + 9, i);
+drivers\RS232.c(661): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+              strncpy(jt808_param.id_0xF00B, iccard_buf_rx + 9 + i, 20 );
+drivers\RS232.c(663): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+              strncpy(jt808_param.id_0xF00C, iccard_buf_rx + 30 + i, j);
+drivers\RS232.c(552): warning:  #177-D: variable "len" was declared but never referenced
+      uint16_t  i, j, len;
+drivers\RS232.c(78): warning:  #550-D: variable "ic_card_trans_step" was set but never used
+  static uint8_t        ic_card_trans_step = 0;
+drivers\RS232.c(122): warning:  #177-D: variable "thread_aux_stack" was declared but never referenced
+  static char thread_aux_stack [256];
+drivers\RS232.c(126): warning:  #177-D: function "rt_thread_entry_aux" was declared but never referenced
+  static void rt_thread_entry_aux( void *parameter )
+drivers\RS232.c: 23 warnings, 0 errors
+compiling usbh_hcs.c...
+compiling usbh_ioreq.c...
+compiling usbh_core.c...
+compiling usbh_stdreq.c...
+compiling usbh_msc_bot.c...
+compiling usbh_msc_core.c...
+compiling usb_core.c...
+compiling usb_hcd.c...
+compiling usb_hcd_int.c...
+compiling usbh_msc_scsi.c...
+assembling startup_stm32f2xx.s...
+compiling system_stm32f2xx.c...
+compiling stm32f2xx_adc.c...
+compiling stm32f2xx_can.c...
+compiling stm32f2xx_crc.c...
+compiling stm32f2xx_cryp.c...
+compiling stm32f2xx_cryp_aes.c...
+compiling stm32f2xx_cryp_des.c...
+compiling stm32f2xx_cryp_tdes.c...
+compiling stm32f2xx_dac.c...
+compiling stm32f2xx_dbgmcu.c...
+compiling stm32f2xx_dcmi.c...
+compiling stm32f2xx_dma.c...
+compiling stm32f2xx_exti.c...
+compiling stm32f2xx_flash.c...
+compiling stm32f2xx_fsmc.c...
+compiling stm32f2xx_gpio.c...
+compiling stm32f2xx_hash.c...
+compiling stm32f2xx_hash_md5.c...
+compiling stm32f2xx_hash_sha1.c...
+compiling stm32f2xx_i2c.c...
+compiling stm32f2xx_iwdg.c...
+compiling stm32f2xx_pwr.c...
+compiling stm32f2xx_rcc.c...
+compiling stm32f2xx_rng.c...
+compiling stm32f2xx_rtc.c...
+compiling stm32f2xx_sdio.c...
+compiling stm32f2xx_spi.c...
+compiling stm32f2xx_syscfg.c...
+compiling stm32f2xx_tim.c...
+compiling stm32f2xx_usart.c...
+compiling stm32f2xx_wwdg.c...
+compiling misc.c...
+compiling clock.c...
+compiling device.c...
+compiling idle.c...
+compiling ipc.c...
+compiling irq.c...
+compiling kservice.c...
+compiling mem.c...
+compiling mempool.c...
+compiling object.c...
+compiling scheduler.c...
+compiling thread.c...
+compiling timer.c...
+compiling dfs.c...
+compiling dfs_fs.c...
+compiling dfs_file.c...
+compiling ff.c...
+compiling dfs_romfs.c...
+compiling romfs.c...
+compiling diskio.c...
+..\..\components\dfs\filesystems\elmfat\diskio.c(39): warning:  #223-D: function "disk_initialize_SD" declared implicitly
+          stat = disk_initialize_SD(drv);
+..\..\components\dfs\filesystems\elmfat\diskio.c(28): warning:  #177-D: variable "result" was declared but never referenced
+      int result = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c(75): warning:  #223-D: function "disk_status_SD" declared implicitly
+          stat = disk_status_SD(drv);
+..\..\components\dfs\filesystems\elmfat\diskio.c(64): warning:  #177-D: variable "result" was declared but never referenced
+      int result = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c(101): warning:  #188-D: enumerated type mixed with another type
+      DRESULT stat = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c(113): warning:  #223-D: function "disk_read_SD" declared implicitly
+          stat = disk_read_SD(drv, buff, sector, count);
+..\..\components\dfs\filesystems\elmfat\diskio.c(113): warning:  #188-D: enumerated type mixed with another type
+          stat = disk_read_SD(drv, buff, sector, count);
+..\..\components\dfs\filesystems\elmfat\diskio.c(102): warning:  #177-D: variable "result" was declared but never referenced
+      int result = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c(140): warning:  #188-D: enumerated type mixed with another type
+      DRESULT stat = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c(152): warning:  #223-D: function "disk_write_SD" declared implicitly
+          stat = disk_write_SD(drv, buff, sector, count);
+..\..\components\dfs\filesystems\elmfat\diskio.c(152): warning:  #188-D: enumerated type mixed with another type
+          stat = disk_write_SD(drv, buff, sector, count);
+..\..\components\dfs\filesystems\elmfat\diskio.c(141): warning:  #177-D: variable "result" was declared but never referenced
+      int result = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c(178): warning:  #188-D: enumerated type mixed with another type
+      DRESULT stat = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c(194): warning:  #223-D: function "disk_ioctl_SD" declared implicitly
+          stat = disk_ioctl_SD(drv, ctrl, buff);
+..\..\components\dfs\filesystems\elmfat\diskio.c(194): warning:  #188-D: enumerated type mixed with another type
+          stat = disk_ioctl_SD(drv, ctrl, buff);
+..\..\components\dfs\filesystems\elmfat\diskio.c(179): warning:  #177-D: variable "result" was declared but never referenced
+      int result = STA_NOINIT;
+..\..\components\dfs\filesystems\elmfat\diskio.c: 16 warnings, 0 errors
+compiling cc936.c...
+compiling cmd.c...
+compiling finsh_compiler.c...
+compiling finsh_error.c...
+compiling finsh_heap.c...
+compiling finsh_init.c...
+compiling finsh_node.c...
+compiling finsh_ops.c...
+compiling finsh_parser.c...
+compiling finsh_token.c...
+compiling finsh_var.c...
+compiling finsh_vm.c...
+compiling shell.c...
+compiling symbol.c...
+compiling Menu_2_1_Status8.c...
+compiling Menu_2_2_Speed15.c...
+compiling Menu_2_3_CentreTextStor.c...
+compiling Menu_2_4_CarInfor.c...
+applications\lcd\Menu_2_4_CarInfor.c(52): warning:  #225-D: the format string ends before this argument
+              sprintf( buf, "车牌号:未 上 牌", jt808_param.id_0x0083 );
+applications\lcd\Menu_2_4_CarInfor.c: 1 warning, 0 errors
+compiling Menu_2_5_DriverInfor.c...
+applications\lcd\Menu_2_5_DriverInfor.c(42): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+          sprintf(reg_str, "%02X%02X-%02X-%02X", (ic_card_para.IC_Card_valitidy[0]), (ic_card_para.IC_Card_valitidy[1]), (ic_card_para.IC_Card_valitidy[2]), (ic_card_para.IC_Card_valitidy[3]));
+applications\lcd\Menu_2_5_DriverInfor.c(43): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 18, reg_str, 10, LCD_MODE_SET);
+applications\lcd\Menu_2_5_DriverInfor.c: 2 warnings, 0 errors
+compiling Menu_2_6_Mileage.c...
+applications\lcd\Menu_2_6_Mileage.c(50): warning:  #181-D: argument is incompatible with corresponding format string conversion
+          sprintf( buf, "里程:%06d.%02d公里", jt808_param_bk.car_mileage / 36000 % 10000000, jt808_param_bk.car_mileage / 36 % 1000 / 10 );
+applications\lcd\Menu_2_6_Mileage.c(50): warning:  #181-D: argument is incompatible with corresponding format string conversion
+          sprintf( buf, "里程:%06d.%02d公里", jt808_param_bk.car_mileage / 36000 % 10000000, jt808_param_bk.car_mileage / 36 % 1000 / 10 );
+applications\lcd\Menu_2_6_Mileage.c(70): warning:  #177-D: variable "buf" was declared but never referenced
+      char buf[32];
+applications\lcd\Menu_2_6_Mileage.c: 3 warnings, 0 errors
+compiling Menu_2_7_RequestProgram.c...
+compiling Menu_2_8_DnsIpDisplay.c...
+applications\lcd\Menu_2_8_DnsIpDisplay.c(74): warning:  #177-D: function "display_old" was declared but never referenced
+  static void display_old( )
+applications\lcd\Menu_2_8_DnsIpDisplay.c: 1 warning, 0 errors
+compiling Menu_2_InforCheck.c...
+compiling Menu_3_1_CentreQuesSend.c...
+compiling Menu_3_2_FullorEmpty.c...
+applications\lcd\Menu_3_2_FullorEmpty.c(32): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+              lcd_text12( i * 30, 19, car_status_str[i], 4, LCD_MODE_SET );
+applications\lcd\Menu_3_2_FullorEmpty.c(34): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+          lcd_text12(30 * pos, 19, car_status_str[pos], 4, LCD_MODE_INVERT );
+applications\lcd\Menu_3_2_FullorEmpty.c(39): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+          lcd_text12( 12 + 60, 3, car_status_str[pos], 4, LCD_MODE_INVERT );
+applications\lcd\Menu_3_2_FullorEmpty.c: 3 warnings, 0 errors
+compiling Menu_3_3_ElectronicInfor.c...
+applications\lcd\Menu_3_3_ElectronicInfor.c(85): warning:  #223-D: function "strlen" declared implicitly
+              buf[3] = strlen(buf + 4);
+applications\lcd\Menu_3_3_ElectronicInfor.c(88): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+              jt808_tx(1, 0x0701, buf, buf[3] );
+applications\lcd\Menu_3_3_ElectronicInfor.c: 2 warnings, 0 errors
+compiling Menu_3_4_Multimedia.c...
+applications\lcd\Menu_3_4_Multimedia.c(60): warning:  #177-D: variable "last_id" was declared but never referenced
+      static uint32_t last_id = 0;
+applications\lcd\Menu_3_4_Multimedia.c(94): warning:  #223-D: function "memset" declared implicitly
+      memset( &tempPara, 0, sizeof( tempPara ) );
+applications\lcd\Menu_3_4_Multimedia.c(146): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+                  sprintf( buf, "%02d>%02d-%02d-%02d %02d:%02d:%02d",
+applications\lcd\Menu_3_4_Multimedia.c(150): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                      lcd_asc0608( 0, 8 * ( i & 0x03 ), buf, LCD_MODE_INVERT );
+applications\lcd\Menu_3_4_Multimedia.c(154): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+                      lcd_asc0608( 0, 8 * ( i & 0x03 ), buf, LCD_MODE_SET );
+applications\lcd\Menu_3_4_Multimedia.c(175): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf( buf, "%02d:%02d:%02d", HOUR( t ), MINUTE( t ), SEC( t ));
+applications\lcd\Menu_3_4_Multimedia.c(176): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+          lcd_asc0608( 0, 0, buf, LCD_MODE_SET );
+applications\lcd\Menu_3_4_Multimedia.c(178): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(buf, "size=%d", pcurrhead->Len - 64);
+applications\lcd\Menu_3_4_Multimedia.c(179): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+          lcd_asc0608( 64, 0, buf, LCD_MODE_SET );
+applications\lcd\Menu_3_4_Multimedia.c(181): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+          sprintf(buf, "ch=%d trig=%d sta=0x%2X", pcurrhead->Channel_ID, pcurrhead->TiggerStyle, pcurrhead->State);
+applications\lcd\Menu_3_4_Multimedia.c(182): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+          lcd_asc0608( 0, 8, buf, LCD_MODE_SET );
+applications\lcd\Menu_3_4_Multimedia.c(111): warning:  #177-D: variable "buf_time" was declared but never referenced
+      uint8_t                           buf[32], buf_time[16];
+applications\lcd\Menu_3_4_Multimedia.c(289): warning:  #223-D: function "Cam_jt808_0x0800_ex" declared implicitly
+                  Cam_jt808_0x0800_ex(mast_socket->linkno, phead_pro->id, 0, 0);
+applications\lcd\Menu_3_4_Multimedia.c: 13 warnings, 0 errors
+compiling Menu_3_5_MultimediaTrans.c...
+compiling Menu_3_6_Record.c...
+compiling Menu_3_7_Affair.c...
+compiling Menu_3_8_LogOut.c...
+applications\lcd\Menu_3_8_LogOut.c(24): warning:  #1295-D: Deprecated declaration jt808_tx_register - give arg types
+  extern uint8_t jt808_tx_register();
+applications\lcd\Menu_3_8_LogOut.c(25): warning:  #1295-D: Deprecated declaration jt808_tx_auth - give arg types
+  extern uint8_t jt808_tx_auth();
+applications\lcd\Menu_3_8_LogOut.c: 2 warnings, 0 errors
+compiling Menu_3_InforInteract.c...
+compiling Menu_4_1_pilao.c...
+applications\lcd\Menu_4_1_pilao.c(29): warning:  #177-D: variable "p" was declared but never referenced
+      uint8_t *p;
+applications\lcd\Menu_4_1_pilao.c(30): warning:  #177-D: variable "len_tel" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_1_pilao.c(30): warning:  #177-D: variable "len_man" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_1_pilao.c(83): warning:  #223-D: function "utc_to_mytime" declared implicitly
+          time  = utc_to_mytime(jt808_param_bk.utc_over_time_start);
+applications\lcd\Menu_4_1_pilao.c(70): warning:  #177-D: variable "p" was declared but never referenced
+      uint8_t *p;
+applications\lcd\Menu_4_1_pilao.c(71): warning:  #177-D: variable "len_tel" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_1_pilao.c(71): warning:  #177-D: variable "len_man" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_1_pilao.c(27): warning:  #177-D: function "pilao_display_old" was declared but never referenced
+  static void pilao_display_old( void )
+applications\lcd\Menu_4_1_pilao.c: 8 warnings, 0 errors
+compiling Menu_4_2_chaosu.c...
+applications\lcd\Menu_4_2_chaosu.c(27): warning:  #177-D: variable "p" was declared but never referenced
+      uint8_t *p;
+applications\lcd\Menu_4_2_chaosu.c(28): warning:  #177-D: variable "len_tel" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_2_chaosu.c(28): warning:  #177-D: variable "len_man" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_2_chaosu.c(80): warning:  #223-D: function "utc_to_mytime" declared implicitly
+          time  = utc_to_mytime(jt808_param_bk.utc_over_speed_start);
+applications\lcd\Menu_4_2_chaosu.c(67): warning:  #177-D: variable "p" was declared but never referenced
+      uint8_t *p;
+applications\lcd\Menu_4_2_chaosu.c(68): warning:  #177-D: variable "len_tel" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_2_chaosu.c(68): warning:  #177-D: variable "len_man" was declared but never referenced
+      uint8_t len_tel, len_man;
+applications\lcd\Menu_4_2_chaosu.c(25): warning:  #177-D: function "chaosu_display_old" was declared but never referenced
+  static void chaosu_display_old( void )
+applications\lcd\Menu_4_2_chaosu.c: 8 warnings, 0 errors
+compiling Menu_5_1_TelDis.c...
+compiling Menu_5_2_TelAtd.c...
+applications\lcd\Menu_5_2_TelAtd.c(52): warning:  #223-D: function "strlen" declared implicitly
+      lcd_text12( 20, 16, jt808_param.id_0x0040, strlen(jt808_param.id_0x0040), LCD_MODE_SET );
+applications\lcd\Menu_5_2_TelAtd.c(84): warning:  #223-D: function "memcpy" declared implicitly
+              memcpy(tel_phonenum, jt808_param.id_0x0040, 16);
+applications\lcd\Menu_5_2_TelAtd.c: 2 warnings, 0 errors
+compiling menu_5_3_bdupgrad.c...
+applications\lcd\menu_5_3_bdupgrad.c(220): warning:  #188-D: enumerated type mixed with another type
+              gps_status.mode = pos + 1;
+applications\lcd\menu_5_3_bdupgrad.c(228): warning:  #223-D: function "gps_reset" declared implicitly
+              gps_reset(pos);                   /*0:热启动 1:冷启动*/
+applications\lcd\menu_5_3_bdupgrad.c(35): warning:  #550-D: variable "tid_upgrade" was set but never used
+  static rt_thread_t    tid_upgrade = RT_NULL;  /*开始更新*/
+applications\lcd\menu_5_3_bdupgrad.c: 3 warnings, 0 errors
+compiling Menu_5_5_Can.c...
+compiling Menu_5_6_Concuss.c...
+compiling Menu_5_7_Version.c...
+applications\lcd\Menu_5_7_Version.c(17): warning:  #223-D: function "lcd_fill" declared implicitly
+      lcd_fill(0);
+applications\lcd\Menu_5_7_Version.c(19): warning:  #223-D: function "lcd_text12" declared implicitly
+      lcd_text12(0, 3, buf, strlen(buf), 1);
+applications\lcd\Menu_5_7_Version.c(19): warning:  #223-D: function "strlen" declared implicitly
+      lcd_text12(0, 3, buf, strlen(buf), 1);
+applications\lcd\Menu_5_7_Version.c(22): warning:  #223-D: function "lcd_update_all" declared implicitly
+      lcd_update_all();
+applications\lcd\Menu_5_7_Version.c(14): warning:  #177-D: variable "i" was declared but never referenced
+      unsigned char i = 0;
+applications\lcd\Menu_5_7_Version.c: 5 warnings, 0 errors
+compiling Menu_5_8_usb.c...
+compiling Menu_5_other.c...
+compiling Menu_7_CentreTextDisplay.c...
+compiling Menu_Include.c...
+compiling menu_popup.c...
+compiling Menu_0_0_password.c...
+applications\lcd\Menu_0_0_password.c(60): warning:  #177-D: variable "buf" was declared but never referenced
+      char buf[32];
+applications\lcd\Menu_0_0_password.c: 1 warning, 0 errors
+compiling Menu_0_0_type.c...
+applications\lcd\Menu_0_0_type.c(65): warning:  #177-D: variable "i" was declared but never referenced
+      unsigned char i = 0;
+applications\lcd\Menu_0_0_type.c(66): warning:  #177-D: variable "play_line" was declared but never referenced
+      uint8_t play_line;
+applications\lcd\Menu_0_0_type.c(67): warning:  #177-D: variable "first_line" was declared but never referenced
+      uint8_t first_line;
+applications\lcd\Menu_0_0_type.c(68): warning:  #177-D: variable "buf" was declared but never referenced
+      char buf[64];
+applications\lcd\Menu_0_0_type.c(69): warning:  #177-D: variable "lcd_mode" was declared but never referenced
+      uint8_t lcd_mode;
+applications\lcd\Menu_0_0_type.c(130): warning:  #111-D: statement is unreachable
+          break;
+applications\lcd\Menu_0_0_type.c(6): warning:  #177-D: variable "type_selc_screen" was declared but never referenced
+  static u8 type_selc_screen = 0;
+applications\lcd\Menu_0_0_type.c(7): warning:  #177-D: variable "type_selc_flag" was declared but never referenced
+  static u8 type_selc_flag = 0;
+applications\lcd\Menu_0_0_type.c: 8 warnings, 0 errors
+compiling Menu_0_1_License.c...
+compiling Menu_0_2_CarType.c...
+applications\lcd\Menu_0_2_CarType.c(49): warning:  #111-D: statement is unreachable
+          break;
+applications\lcd\Menu_0_2_CarType.c: 1 warning, 0 errors
+compiling Menu_0_3_Sim.c...
+compiling Menu_0_4_VIN.c...
+compiling Menu_0_5_Colour.c...
+applications\lcd\Menu_0_5_Colour.c(69): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "const char *"
+                  lcd_text12(96, 0, car_col[col_num], 4, LCD_MODE_SET);
+applications\lcd\Menu_0_5_Colour.c: 1 warning, 0 errors
+compiling Menu_0_loggingin.c...
+applications\lcd\Menu_0_loggingin.c(41): warning:  #223-D: function "memset" declared implicitly
+          memset(jt808_param.id_0xF006, 0, sizeof(jt808_param.id_0xF006));
+applications\lcd\Menu_0_loggingin.c(42): warning:  #223-D: function "strncpy" declared implicitly
+          strncpy( jt808_param.id_0xF006, (char *)val, len );
+applications\lcd\Menu_0_loggingin.c(43): warning:  #223-D: function "memcpy" declared implicitly
+          memcpy(Menu_sim_Code, jt808_param.id_0xF006, 12);
+applications\lcd\Menu_0_loggingin.c(36): warning:  #177-D: variable "i" was declared but never referenced
+      uint16_t  i, j;
+applications\lcd\Menu_0_loggingin.c(36): warning:  #177-D: variable "j" was declared but never referenced
+      uint16_t  i, j;
+applications\lcd\Menu_0_loggingin.c(37): warning:  #177-D: variable "u32data" was declared but never referenced
+      uint32_t  u32data;
+applications\lcd\Menu_0_loggingin.c: 6 warnings, 0 errors
+compiling Menu_6_SetInfor.c...
+applications\lcd\Menu_6_SetInfor.c(66): warning:  #177-D: function "timetick" was declared but never referenced
+  static void timetick(unsigned int systick)
+applications\lcd\Menu_6_SetInfor.c: 1 warning, 0 errors
+compiling Menu_param_set_01.c...
+applications\lcd\Menu_param_set_01.c(58): warning:  #223-D: function "strlen" declared implicitly
+              lcd_text12( lcd_menu[i].left_val,  lcd_menu[i].top_val, lcd_menu[i].caption, strlen(lcd_menu[i].caption), lcd_mode);
+applications\lcd\Menu_param_set_01.c(21): warning:  #550-D: variable "pos" was set but never used
+  static int16_t        pos;
+applications\lcd\Menu_param_set_01.c: 2 warnings, 0 errors
+compiling Menu_1_Idle.c...
+applications\lcd\Menu_1_Idle.c(167): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(168): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(169): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(170): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(171): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(172): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(173): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(174): warning:  #9-D: nested comment is not allowed
+applications\lcd\Menu_1_Idle.c(703): warning:  #177-D: variable "pos" was declared but never referenced
+      uint8_t           i = 0, pos, hour, minute;
+applications\lcd\Menu_1_Idle.c(703): warning:  #177-D: variable "hour" was declared but never referenced
+      uint8_t           i = 0, pos, hour, minute;
+applications\lcd\Menu_1_Idle.c(703): warning:  #177-D: variable "minute" was declared but never referenced
+      uint8_t           i = 0, pos, hour, minute;
+applications\lcd\Menu_1_Idle.c(704): warning:  #177-D: variable "data_u32" was declared but never referenced
+      uint32_t          data_u32;
+applications\lcd\Menu_1_Idle.c(705): warning:  #177-D: variable "time" was declared but never referenced
+      MYTIME            time;
+applications\lcd\Menu_1_Idle.c: 13 warnings, 0 errors
+compiling Menu_0_6_PulseCoefficient.c...
+applications\lcd\Menu_0_6_PulseCoefficient.c(58): warning:  #186-D: pointless comparison of unsigned integer with zero
+              if((pulse_coefficient_num >= 0) && (pulse_coefficient_num <= 5))
+applications\lcd\Menu_0_6_PulseCoefficient.c(76): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+                  if(sscanf(pulse_coefficient_arr, "%d", &data_u32))
+applications\lcd\Menu_0_6_PulseCoefficient.c(81): warning:  #61-D: integer operation result is out of range
+                          jt808_param.id_0xF032 = BIT(31) | 6250;
+applications\lcd\Menu_0_6_PulseCoefficient.c: 3 warnings, 0 errors
+compiling Menu_0_7_oil.c...
+applications\lcd\Menu_0_7_oil.c(58): warning:  #186-D: pointless comparison of unsigned integer with zero
+              if((pulse_coefficient_num >= 0) && (pulse_coefficient_num <= 5))
+applications\lcd\Menu_0_7_oil.c(76): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+                  if(sscanf(pulse_coefficient_arr, "%d", &data_u32))
+applications\lcd\Menu_0_7_oil.c: 2 warnings, 0 errors
+compiling Menu_5_9_debug.c...
+applications\lcd\Menu_5_9_debug.c(33): warning:  #223-D: function "sd_write_console" declared implicitly
+      sd_write_console(str);
+applications\lcd\Menu_5_9_debug.c(55): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *"
+              my_strncpy(debug_msg[debug_msg_wr], buf, len);
+applications\lcd\Menu_5_9_debug.c(116): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+          strcat(buf, debug_msg[play_line]);
+applications\lcd\Menu_5_9_debug.c(123): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+          strcat(buf, debug_msg[play_line]);
+applications\lcd\Menu_5_9_debug.c(139): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+          strcat(buf, debug_msg[debug_msg_rd]);
+applications\lcd\Menu_5_9_debug.c(146): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *restrict"
+          strcat(buf, debug_msg[debug_msg_rd]);
+applications\lcd\Menu_5_9_debug.c(213): warning:  #177-D: variable "tmp" was declared but never referenced
+      MENUITEM *tmp;
+applications\lcd\Menu_5_9_debug.c: 7 warnings, 0 errors
+compiling Menu_flash_err.c...
+applications\lcd\Menu_flash_err.c(48): warning:  #223-D: function "factory" declared implicitly
+          factory(3);
+applications\lcd\Menu_flash_err.c(19): warning:  #550-D: variable "file_menu1" was set but never used
+  static uint8_t        file_menu1 = 1;                 /*当前显示的界面状态*/
+applications\lcd\Menu_flash_err.c: 2 warnings, 0 errors
+compiling Menu_8_SetDNS.c...
+applications\lcd\Menu_8_SetDNS.c(91): warning:  #223-D: function "memset" declared implicitly
+          memset(jt808_param.id_0xF014, 0, sizeof(jt808_param.id_0xF014));
+applications\lcd\Menu_8_SetDNS.c(92): warning:  #223-D: function "strncpy" declared implicitly
+          strncpy( jt808_param.id_0xF014, (char *)val, len );
+applications\lcd\Menu_8_SetDNS.c(86): warning:  #177-D: variable "i" was declared but never referenced
+      uint16_t  i, j;
+applications\lcd\Menu_8_SetDNS.c(86): warning:  #177-D: variable "j" was declared but never referenced
+      uint16_t  i, j;
+applications\lcd\Menu_8_SetDNS.c(87): warning:  #177-D: variable "u32data" was declared but never referenced
+      uint32_t  u32data;
+applications\lcd\Menu_8_SetDNS.c: 5 warnings, 0 errors
+compiling Menu_0_2_SpeedType.c...
+applications\lcd\Menu_0_2_SpeedType.c(20): warning:  #177-D: variable "i" was declared but never referenced
+      unsigned char i = 0;
+applications\lcd\Menu_0_2_SpeedType.c(21): warning:  #177-D: variable "play_line" was declared but never referenced
+      uint8_t play_line;
+applications\lcd\Menu_0_2_SpeedType.c(22): warning:  #177-D: variable "first_line" was declared but never referenced
+      uint8_t first_line;
+applications\lcd\Menu_0_2_SpeedType.c(23): warning:  #177-D: variable "buf" was declared but never referenced
+      char buf[64];
+applications\lcd\Menu_0_2_SpeedType.c(24): warning:  #177-D: variable "lcd_mode" was declared but never referenced
+      uint8_t lcd_mode;
+applications\lcd\Menu_0_2_SpeedType.c(62): warning:  #111-D: statement is unreachable
+          break;
+applications\lcd\Menu_0_2_SpeedType.c(8): warning:  #177-D: variable "set_type_ok" was declared but never referenced
+  static u8 set_type_ok = 0;    //非0表示设置OK
+applications\lcd\Menu_0_2_SpeedType.c: 7 warnings, 0 errors
+compiling Menu_setting_param.c...
+applications\lcd\Menu_setting_param.c(78): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              strncpy( param_data, (char *)val, len );
+applications\lcd\Menu_setting_param.c(39): warning:  #177-D: variable "i" was declared but never referenced
+      uint16_t  i, j;
+applications\lcd\Menu_setting_param.c(39): warning:  #177-D: variable "j" was declared but never referenced
+      uint16_t  i, j;
+applications\lcd\Menu_setting_param.c(151): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "unsigned char *"
+          Hex_To_Ascii(param_in_val, data, 8);
+applications\lcd\Menu_setting_param.c(156): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+              memcpy(param_in_val, data, strlen(data));
+applications\lcd\Menu_setting_param.c(178): warning:  #177-D: variable "play_line" was declared but never referenced
+      uint8_t play_line;
+applications\lcd\Menu_setting_param.c(179): warning:  #177-D: variable "first_line" was declared but never referenced
+      uint8_t first_line;
+applications\lcd\Menu_setting_param.c(180): warning:  #177-D: variable "buf" was declared but never referenced
+      char buf[64];
+applications\lcd\Menu_setting_param.c(270): warning:  #177-D: variable "i" was declared but never referenced
+      uint8_t i;
+applications\lcd\Menu_setting_param.c(7): warning:  #550-D: variable "menu1" was set but never used
+  static u8 menu1 = 0;          //主界面
+applications\lcd\Menu_setting_param.c(9): warning:  #550-D: variable "menu3" was set but never used
+  static u8 menu3 = 0;          //第三层界面
+applications\lcd\Menu_setting_param.c: 11 warnings, 0 errors
+compiling Menu_8_1_MainDnsPort.c...
+applications\lcd\Menu_8_1_MainDnsPort.c(96): warning:  #223-D: function "memset" declared implicitly
+          memset(Menu_MainDns, 0, sizeof(Menu_MainDns));
+applications\lcd\Menu_8_1_MainDnsPort.c(134): warning:  #223-D: function "strlen" declared implicitly
+                      for(i = 0; i < strlen((const char *)Menu_MainDns); i++)
+applications\lcd\Menu_8_1_MainDnsPort.c(144): warning:  #223-D: function "memcpy" declared implicitly
+                              memcpy(jt808_param.id_0xF049, Menu_MainDns, i);
+applications\lcd\Menu_8_1_MainDnsPort.c(156): warning:  #223-D: function "memcpy" declared implicitly
+                              memcpy(jt808_param.id_0x0017, Menu_MainDns, i);
+applications\lcd\Menu_8_1_MainDnsPort.c(168): warning:  #223-D: function "memcpy" declared implicitly
+                              memcpy(jt808_param.id_0xF049, Menu_MainDns, i);
+applications\lcd\Menu_8_1_MainDnsPort.c(183): warning:  #223-D: function "memcpy" declared implicitly
+                              memcpy(jt808_param.id_0x0017, Menu_MainDns, i);
+applications\lcd\Menu_8_1_MainDnsPort.c(79): warning:  #177-D: variable "Dnstr" was declared but never referenced
+      u8  Dnstr[22], i = 0;
+applications\lcd\Menu_8_1_MainDnsPort.c: 7 warnings, 0 errors
+compiling Menu_1_menu.c...
+applications\lcd\Menu_1_menu.c(146): warning:  #223-D: function "strlen" declared implicitly
+          lcd_text12(0, i * 15 + 3, buf, strlen(buf), mode);
+applications\lcd\Menu_1_menu.c(133): warning:  #177-D: variable "last_flag" was declared but never referenced
+      uint8_t current_flag, last_flag;
+applications\lcd\Menu_1_menu.c: 2 warnings, 0 errors
+compiling Menu_4_3_PulseCoefficient.c...
+compiling Menu_4_4_ExportData.c...
+applications\lcd\Menu_4_4_ExportData.c(68): warning:  #223-D: function "gb_usb_out" declared implicitly
+                      gb_usb_out(0xFE);// OUTPUT ALL info
+applications\lcd\Menu_4_4_ExportData.c: 1 warning, 0 errors
+compiling Menu_4_5_ICcard.c...
+applications\lcd\Menu_4_5_ICcard.c(26): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+          sprintf(reg_str, "%02X%02X-%02X-%02X", (ic_card_para.IC_Card_valitidy[0]), (ic_card_para.IC_Card_valitidy[1]), (ic_card_para.IC_Card_valitidy[2]), (ic_card_para.IC_Card_valitidy[3]));
+applications\lcd\Menu_4_5_ICcard.c(27): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 18, reg_str, 10, LCD_MODE_SET);
+applications\lcd\Menu_4_5_ICcard.c: 2 warnings, 0 errors
+compiling Menu_4_7_speedlog.c...
+applications\lcd\Menu_4_7_speedlog.c(25): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+      sprintf(Dis_start_time, "st:%2X-%2X-%2X %2X:%2X:%2X", H15_reg[1], H15_reg[2], H15_reg[3], H15_reg[4], H15_reg[5], H15_reg[6]);
+applications\lcd\Menu_4_7_speedlog.c(26): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+      sprintf(Dis_end_time, "ed:%2X-%2X-%2X %2X:%2X:%2X", H15_reg[7], H15_reg[8], H15_reg[9], H15_reg[10], H15_reg[11], H15_reg[12]);
+applications\lcd\Menu_4_7_speedlog.c(30): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 0, Dis_status, strlen(Dis_status), LCD_MODE_SET);
+applications\lcd\Menu_4_7_speedlog.c(30): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 0, Dis_status, strlen(Dis_status), LCD_MODE_SET);
+applications\lcd\Menu_4_7_speedlog.c(31): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 12, Dis_start_time, strlen(Dis_start_time), LCD_MODE_SET);
+applications\lcd\Menu_4_7_speedlog.c(31): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 12, Dis_start_time, strlen(Dis_start_time), LCD_MODE_SET);
+applications\lcd\Menu_4_7_speedlog.c(32): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 22, Dis_end_time, strlen(Dis_end_time), LCD_MODE_SET);
+applications\lcd\Menu_4_7_speedlog.c(32): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          lcd_text12(0, 22, Dis_end_time, strlen(Dis_end_time), LCD_MODE_SET);
+applications\lcd\Menu_4_7_speedlog.c: 8 warnings, 0 errors
+compiling Menu_4_recorder.c...
+applications\lcd\Menu_4_recorder.c(91): warning:  #177-D: function "timetick" was declared but never referenced
+  static void timetick(unsigned int systick)
+applications\lcd\Menu_4_recorder.c: 1 warning, 0 errors
+compiling Menu_8_2_AuxDnsPort.c...
+applications\lcd\Menu_8_2_AuxDnsPort.c(97): warning:  #223-D: function "memset" declared implicitly
+          memset(Menu_AuxDns, 0, sizeof(Menu_AuxDns));
+applications\lcd\Menu_8_2_AuxDnsPort.c(80): warning:  #177-D: variable "Dnstr" was declared but never referenced
+      u8  Dnstr[20], i = 0;
+applications\lcd\Menu_8_2_AuxDnsPort.c(80): warning:  #177-D: variable "i" was declared but never referenced
+      u8  Dnstr[20], i = 0;
+applications\lcd\Menu_8_2_AuxDnsPort.c: 3 warnings, 0 errors
+compiling Menu_8_3_MainIpPort.c...
+applications\lcd\Menu_8_3_MainIpPort.c(46): warning:  #223-D: function "memcpy" declared implicitly
+          memcpy(Menu_MainIp, "   .   .   .   :    ", 20);
+applications\lcd\Menu_8_3_MainIpPort.c(84): warning:  #223-D: function "memset" declared implicitly
+              memset(jt808_param.id_0xF049, 0, sizeof(jt808_param.id_0xF049));
+applications\lcd\Menu_8_3_MainIpPort.c: 2 warnings, 0 errors
+compiling Menu_8_4_AuxIpPort.c...
+applications\lcd\Menu_8_4_AuxIpPort.c(47): warning:  #223-D: function "memcpy" declared implicitly
+          memcpy(Menu_AuxIp, "   .   .   .   :    ", 20);
+applications\lcd\Menu_8_4_AuxIpPort.c: 1 warning, 0 errors
+compiling LCD_Driver.c...
+applications\lcd\LCD_Driver.c(253): warning:  #177-D: variable "ctr" was declared but never referenced
+      unsigned char     ctr;
+applications\lcd\LCD_Driver.c(315): warning:  #177-D: variable "ctr" was declared but never referenced
+      unsigned char     ctr;
+applications\lcd\LCD_Driver.c(731): warning:  #223-D: function "memcpy" declared implicitly
+              memcpy((uint8_t *)glyph, (uint8_t *)addr, 12);
+applications\lcd\LCD_Driver.c(792): warning:  #223-D: function "memcpy" declared implicitly
+              memcpy((uint8_t *)glyph, (uint8_t *)addr, 24);
+applications\lcd\LCD_Driver.c(962): warning:  #223-D: function "strlen" declared implicitly
+      int                               charnum = strlen( p );
+applications\lcd\LCD_Driver.c: 5 warnings, 0 errors
+compiling common.c...
+common\common.c(108): warning:  #177-D: variable "j" was declared but never referenced
+      unsigned int i, j;
+common\common.c: 1 warning, 0 errors
+compiling cpuport.c...
+assembling context_rvds.S...
+compiling backtrace.c...
+compiling div0.c...
+compiling showmem.c...
+compiling gb_inject.c...
+compiling gb_vdr.c...
+applications\GB19056\gb_vdr.c(416): warning:  #223-D: function "DF_Read_RecordAdd" declared implicitly
+      DF_Read_RecordAdd(Avrg_15minSpd.write, Avrg_15minSpd.read, ADDR_DF_VDR_15minAddr);
+applications\GB19056\gb_vdr.c(479): warning:  #223-D: function "DF_Write_RecordAdd" declared implicitly
+          DF_Write_RecordAdd(Avrg_15minSpd.write, Avrg_15minSpd.read, ADDR_DF_VDR_15minAddr);
+applications\GB19056\gb_vdr.c(579): warning:  #223-D: function "Avrg15_min_generate" declared implicitly
+                      Avrg15_min_generate(VdrData.H_09_spd_accumlate / 58);
+applications\GB19056\gb_vdr.c(584): warning:  #223-D: function "Avrg15_min_save" declared implicitly
+                          Avrg15_min_save();
+applications\GB19056\gb_vdr.c: 4 warnings, 0 errors
+compiling jt808_GB19056.c...
+applications\GB19056\jt808_GB19056.c(668): warning:  #177-D: variable "tempu32data" was declared but never referenced
+      uint32_t                          tempu32data;
+applications\GB19056\jt808_GB19056.c(772): warning:  #177-D: variable "iterdata" was declared but never referenced
+      JT808_TX_NODEDATA          *iterdata = nodedata;
+applications\GB19056\jt808_GB19056.c(777): warning:  #177-D: variable "tempu32data" was declared but never referenced
+      uint32_t                          tempu32data;
+applications\GB19056\jt808_GB19056.c(779): warning:  #177-D: variable "ack_seq" was declared but never referenced
+      uint16_t                          ack_seq;                        /*应答序号*/
+applications\GB19056\jt808_GB19056.c(863): warning:  #177-D: variable "TempAddress" was declared but never referenced
+      u32                                               TempAddress;
+applications\GB19056\jt808_GB19056.c(1239): warning:  #940-D: missing return statement at end of non-void function "Send_gb_vdr_stuffinfo"
+  }
+applications\GB19056\jt808_GB19056.c(904): warning:  #177-D: variable "start" was declared but never referenced
+      MYTIME      start, end;
+applications\GB19056\jt808_GB19056.c(904): warning:  #177-D: variable "end" was declared but never referenced
+      MYTIME      start, end;
+applications\GB19056\jt808_GB19056.c(906): warning:  #550-D: variable "fcs" was set but never used
+      uint8_t     fcs;
+applications\GB19056\jt808_GB19056.c(1247): warning:  #177-D: variable "psrc" was declared but never referenced
+      uint8_t            *psrc;
+applications\GB19056\jt808_GB19056.c(1249): warning:  #177-D: variable "tmpbuf" was declared but never referenced
+      uint8_t           tmpbuf[16];
+applications\GB19056\jt808_GB19056.c(1252): warning:  #177-D: variable "len" was declared but never referenced
+      uint16_t  len = JT808HEAD_LEN( pmsg );
+applications\GB19056\jt808_GB19056.c(1254): warning:  #177-D: variable "SregLen" was declared but never referenced
+      uint16_t  SregLen;
+applications\GB19056\jt808_GB19056.c(1255): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t  i;
+applications\GB19056\jt808_GB19056.c(1673): warning:  #177-D: variable "psrc" was declared but never referenced
+      uint8_t            *psrc;
+applications\GB19056\jt808_GB19056.c(1675): warning:  #177-D: variable "tmpbuf" was declared but never referenced
+      uint8_t           tmpbuf[16];
+applications\GB19056\jt808_GB19056.c(1678): warning:  #177-D: variable "len" was declared but never referenced
+      uint16_t  len = JT808HEAD_LEN( pmsg );
+applications\GB19056\jt808_GB19056.c(1680): warning:  #177-D: variable "SregLen" was declared but never referenced
+      uint16_t  SregLen;
+applications\GB19056\jt808_GB19056.c(1681): warning:  #177-D: variable "i" was declared but never referenced
+      uint32_t  i;
+applications\GB19056\jt808_GB19056.c(1818): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      u8 len = strlen(instr);
+applications\GB19056\jt808_GB19056.c(1820): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      Ascii_To_Hex(in, instr + 2, len - 2);
+applications\GB19056\jt808_GB19056.c(2635): warning:  #177-D: variable "regdis" was declared but never referenced
+      u32       regdis                     = 0, reg2 = 0;
+applications\GB19056\jt808_GB19056.c(2635): warning:  #177-D: variable "reg2" was declared but never referenced
+      u32       regdis                     = 0, reg2 = 0;
+applications\GB19056\jt808_GB19056.c(2637): warning:  #177-D: variable "i" was declared but never referenced
+      u16  i = 0, subi = 0, continue_counter = 0;
+applications\GB19056\jt808_GB19056.c(2637): warning:  #177-D: variable "subi" was declared but never referenced
+      u16  i = 0, subi = 0, continue_counter = 0;
+applications\GB19056\jt808_GB19056.c(2637): warning:  #177-D: variable "continue_counter" was declared but never referenced
+      u16  i = 0, subi = 0, continue_counter = 0;
+applications\GB19056\jt808_GB19056.c(2638): warning:  #177-D: variable "get_indexnum" was declared but never referenced
+      u16   get_indexnum = 0; // 获取校验
+applications\GB19056\jt808_GB19056.c(2640): warning:  #177-D: variable "Not_null_flag" was declared but never referenced
+      u8   Not_null_flag = 0; // NO  data ACK null once
+applications\GB19056\jt808_GB19056.c(2641): warning:  #177-D: variable "return_value" was declared but never referenced
+      u8   return_value = 0;
+applications\GB19056\jt808_GB19056.c(2642): warning:  #177-D: variable "Rd_Time" was declared but never referenced
+      u32  Rd_Time = 0;
+applications\GB19056\jt808_GB19056.c(3498): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      u16 distr_len = strlen(discrip_str);
+applications\GB19056\jt808_GB19056.c(3500): warning:  #177-D: variable "regdis" was declared but never referenced
+      u32  regdis                       = 0, reg2 = 0;
+applications\GB19056\jt808_GB19056.c(3500): warning:  #177-D: variable "reg2" was declared but never referenced
+      u32  regdis                       = 0, reg2 = 0;
+applications\GB19056\jt808_GB19056.c(3744): warning:  #177-D: variable "regdis" was declared but never referenced
+      u32       regdis                     = 0, reg2 = 0;
+applications\GB19056\jt808_GB19056.c(3744): warning:  #177-D: variable "reg2" was declared but never referenced
+      u32       regdis                     = 0, reg2 = 0;
+applications\GB19056\jt808_GB19056.c(3749): warning:  #550-D: variable "Not_null_flag" was set but never used
+      u8   Not_null_flag = 0; // NO  data ACK null once
+applications\GB19056\jt808_GB19056.c(4746): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          if(strncmp(GB19056.rx_buf, "deviceid", 8) == 0) // deviceid("012345678901")
+applications\GB19056\jt808_GB19056.c(4755): warning:  #223-D: function "deviceid" declared implicitly
+              deviceid(str_12len);
+applications\GB19056\jt808_GB19056.c(4787): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const TCHAR *"
+                  res = f_open(&file, GB19056.Usbfilename, FA_READ | FA_WRITE | FA_OPEN_ALWAYS );
+applications\GB19056\jt808_GB19056.c(5394): warning:  #177-D: variable "result0" was declared but never referenced
+      u8 result0 = 0, result1 = 1, result2 = 2, result3 = 4, result4 = 5; //i=0;
+applications\GB19056\jt808_GB19056.c(5394): warning:  #177-D: variable "result1" was declared but never referenced
+      u8 result0 = 0, result1 = 1, result2 = 2, result3 = 4, result4 = 5; //i=0;
+applications\GB19056\jt808_GB19056.c(5394): warning:  #177-D: variable "result2" was declared but never referenced
+      u8 result0 = 0, result1 = 1, result2 = 2, result3 = 4, result4 = 5; //i=0;
+applications\GB19056\jt808_GB19056.c(5394): warning:  #177-D: variable "result3" was declared but never referenced
+      u8 result0 = 0, result1 = 1, result2 = 2, result3 = 4, result4 = 5; //i=0;
+applications\GB19056\jt808_GB19056.c(5394): warning:  #177-D: variable "result4" was declared but never referenced
+      u8 result0 = 0, result1 = 1, result2 = 2, result3 = 4, result4 = 5; //i=0;
+applications\GB19056\jt808_GB19056.c(5396): warning:  #177-D: variable "red_byte" was declared but never referenced
+      u8  red_byte[128];
+applications\GB19056\jt808_GB19056.c(5397): warning:  #177-D: variable "fcs" was declared but never referenced
+      u8  fcs = 0, i = 0;
+applications\GB19056\jt808_GB19056.c(5397): warning:  #177-D: variable "i" was declared but never referenced
+      u8  fcs = 0, i = 0;
+applications\GB19056\jt808_GB19056.c(898): warning:  #177-D: function "Send_gb_vdr_stuffinfo" was declared but never referenced
+  static u16 Send_gb_vdr_stuffinfo(uint16_t seq, uint8_t cmd)
+applications\GB19056\jt808_GB19056.c: 48 warnings, 0 errors
+compiling large_lcd.c...
+applications\large_lcd\large_lcd.c(204): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              if(strlen(dwin_reg) == 11)
+applications\large_lcd\large_lcd.c(225): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              if(strlen(dwin_reg) == 11)
+applications\large_lcd\large_lcd.c(249): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              jt808_param.id_0x0081  = atoi(dwin_reg);
+applications\large_lcd\large_lcd.c(254): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              if(strlen(dwin_reg) == 9)
+applications\large_lcd\large_lcd.c(258): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                  jt808_param.id_0x0084 = atoi(dwin_reg + 8);
+applications\large_lcd\large_lcd.c(270): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              jt808_param.id_0x0082 = atoi(dwin_reg);
+applications\large_lcd\large_lcd.c(275): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              if(strlen(dwin_reg) == 17)
+applications\large_lcd\large_lcd.c(313): warning:  #177-D: variable "i" was declared but never referenced
+      u8        i = 0;
+applications\large_lcd\large_lcd.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=199916 RO-data=15356 RW-data=7204 ZI-data=84988  
+After Build - User command #1: fromelf --bin --output=.\build\app.bin .\build\rtthread-stm32f2xx.axf
+".\build\rtthread-stm32f2xx.axf" - 0 Error(s), 565 Warning(s).
+</pre>
+</body>
+</html>

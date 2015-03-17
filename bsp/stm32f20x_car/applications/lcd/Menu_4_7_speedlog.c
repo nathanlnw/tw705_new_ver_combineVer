@@ -1,7 +1,7 @@
 #include "Menu_Include.h"
 #include <stdio.h>
 #include <string.h>
-#include "sed1520.h"
+#include "LCD_Driver.h"
 #include "GB_vdr.h"
 
 static u8 Dis_num = 0;

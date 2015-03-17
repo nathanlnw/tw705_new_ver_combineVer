@@ -1,7 +1,7 @@
 #include  <string.h>
 #include "Menu_Include.h"
 //#include "Lcd.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 
 static u8 menu1 = 0;		//Ö÷½çÃæ

@@ -1,5 +1,5 @@
 #include "Menu_Include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 #if 0
 #define MENU1_MENU_NUM		6

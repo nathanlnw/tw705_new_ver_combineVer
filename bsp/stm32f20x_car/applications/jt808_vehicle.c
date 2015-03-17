@@ -379,6 +379,8 @@ static void cb_tmr_50ms( void *parameter )
             jt808_param_bk.low_speed_wait_time++;
         }
         SpeedFatigue_1000ms();
+
+		Lcd_hardInit_timer();// new lcd   add  by  nathan
     }
     if(counter % 10 == 0)
     {

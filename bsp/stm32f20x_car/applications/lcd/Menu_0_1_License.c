@@ -1,7 +1,7 @@
 #include  <string.h>
 #include "Menu_Include.h"
 //#include "Lcd.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 #define width_hz   12
 #define width_zf   6

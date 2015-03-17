@@ -19,7 +19,7 @@
 #include <rtthread.h>
 #include "jt808.h"
 #include "menu_include.h"
-#include "sed1520.h"
+#include "LCD_Driver.h"
 
 #include "sle4442.h"
 
